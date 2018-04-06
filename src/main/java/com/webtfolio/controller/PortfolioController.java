@@ -1,4 +1,4 @@
-package com.webtfolio.portfolio.controller;
+package com.webtfolio.controller;
 
 import java.util.List;
 
@@ -9,30 +9,30 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.webtfolio.entity.Note;
-import com.webtfolio.service.NoteService;
+import com.webtfolio.entity.Portfolio;
+import com.webtfolio.service.PortfolioService;
 
 @Controller
-@RequestMapping("/note/")
-public class NoteController {
+@RequestMapping("/portfolio/")
+public class PortfolioController {
 	
 	@Autowired
-	private NoteService service;	//	= new NoteService();
+	private PortfolioService service;	//	= new NoteService();
 	
 	@RequestMapping("list")
 	public String list(@RequestParam(value="p",defaultValue="1")Integer page, Model model) {
 		
-		List<Note> notes = service.getNoteList(page);
-		model.addAttribute("notes", notes);
-		return "note/list";
+		List<Portfolio> portfolios = service.getPortfolioList(page);
+		model.addAttribute("portfolios", portfolios);
+		return "portfolio.list";
 	}
 	
 	@RequestMapping("{id}")
 	public String detail(@PathVariable("id")Integer id, Model model) {
 	
-		/*Note note = service.getNote(id);
-		model.addAttribute("note", note);*/
-		return "note/detail";
+		/*Note note = service.getPortfolio(id);
+		model.addAttribute("portfolio", portfolio);*/
+		return "portfolio.detail";
 	}
 	
 }
