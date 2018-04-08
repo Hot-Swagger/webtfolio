@@ -24,53 +24,155 @@ h1,h2,h3,h4,h5,h6{
 	margin: 0;
 }
 
+a{
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover,
+a:active{
+	color: #000;
+	text-decoration: none;
+}
+
 /* ------------------------ my style cascade ---------------------------- */
 
 .hidden{
 	display: none;
 }
 
+.background-highlight,
+.background-highlight:hover{
+	background: #4ca9b4;
+	color: #fff;
+}
+
 /* --- .header ------------------------------------------------------------ */
 .header{
-	height: 45px;
+	height: 50px;
 	width: 100%;
+	top: 0;
 	position: fixed;
-	background: #ffffff;
-	border-bottom: 1px solid #e9e9e9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: #181819;
+	border-bottom: 1px solid #7f7f7f;
 }
-	.header>h1{
-			font-size: 14px;
-			height: inherit;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		
-	/* --- .main-menu -------------------------------------------------- */
-	.main-menu{
+	/* --- .header-menu -------------------------------------------------- */
+	.header-menu{
 		position: relative;
-		top: -45px;
+		z-index: 100;
 	}
-		.main-menu ul{
+		.header-menu ul{
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 		}
-			.main-menu li,
-			.main-menu li a{
-				width: 45px;
-				height: 45px;
+			.header-menu ul li:first-child{
+				margin-left: -20px;
+				width: 200px;
+				height: 50px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 			}
-				.main-menu li a img{
+			.header-menu ul li:first-child a{
+				width: 200px;
+				height: 50px;
+				background-image: url("../images/logo-white.png");
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+			.header-menu ul li:last-child{
+				width: 50px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.header-menu ul li:last-child:hover{
+				cursor: pointer;
+			}
+				.header-menu ul li:last-child img{
 					width: 24px;
 					height: 24px;
 				}
+	/* --- .main-menu -------------------------------------------------- */
+	.main-menu{
+		margin-top: 1px;
+		visibility: hidden;
+		opacity: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: translateY(-3em);
+		z-index: -1;
+		transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.02s;
+		background: #181819;
+	}
+	.main-menu.show{
+		visibility: visible;
+		opacity: 1;
+		z-index: 1;
+		transform: translateY(0%);
+		/* transition-delay: 0s, 0s, 0.3s; */
+	}
+		.main-menu a{
+			color: #fff;
+		}
+		.main-menu ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+			.main-menu ul li{
+				padding: 10px 20px;
+				font-size: 16px;
+				color: #fff;
+				border-bottom: 1px solid #7f7f7f;
+			}
+			.main-menu ul li:hover{
+				background: #4ca9b4;
+				color: #fff;
+			}
+#admin-menu-select{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#admin-menu-select span{
+	display: flex;
+	align-items: center;
+}
+#admin-menu-select:hover{
+	cursor: pointer;
+}
+.amdin-menu{
+	visibility: hidden;
+	opacity: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateY(-3em);
+	z-index: -1;
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.02s;
+}
+	.admin-menu.show{
+		visibility: visible;
+		opacity: 1;
+		z-index: 1;
+		transform: translateY(0%);
+		transition-delay: 0s, 0s, 0.3s;
+	}
 				
 /* --- .main ------------------------------------------------------------ */
 .main{
-   padding-top: 45px;
+   margin-top: 51px;
 }
 
    .main .note-list{
@@ -84,7 +186,7 @@ h1,h2,h3,h4,h5,h6{
       }
          
          .main .note-list ul li{
-            padding: 15px;
+            padding: 20px;
             border-bottom: 1px solid #ddd;
             
          }
@@ -113,3 +215,14 @@ h1,h2,h3,h4,h5,h6{
             .main .note-list ul li > div > span:first-child {
                color: #6bacca;
             }
+
+/* --- .footer ------------------------------------------------------------ */
+.footer{
+	padding: 40px 20px;
+	color: #eaeaea;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: center;
+    background: #181819;
+    border-top: 1px solid #7f7f7f;
+}

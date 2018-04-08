@@ -14,8 +14,6 @@
 <body>
 	<!-- header -->
 	<tiles:insertAttribute name="header"/>
-	<!-- aside -->
-	<tiles:insertAttribute name="aside"/>
 	<!-- main -->
 	<tiles:insertAttribute name="main"/>
 	<!-- footer -->

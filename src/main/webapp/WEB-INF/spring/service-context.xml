@@ -12,8 +12,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <!-- Autowired 불러올수 있도록 설정 -->
-    <context:annotation-config />
+    <!-- xml설정파일 외에 어노테이션으로도 지시서를 컨테이너에 담도록 기본 패키지 위치를 지정하는 설정 -->
+	<context:component-scan	base-package="
+	com.webtfolio.service
+	com.webtfolio.dao" />
     
     <!-- mybatis 라이브러리 활용 DB 불러오기 3종 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
@@ -32,14 +34,5 @@
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
       <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
     </bean>
-    
-    <!-- mybatis 객체 -->
-    <bean class="com.webtfolio.dao.mybatis.MyBatisNoteDao" />
-    <bean class="com.webtfolio.dao.mybatis.MyBatisPortfolioDao" />
-    
-    <!-- service 객체 -->
-    <bean class="com.webtfolio.service.NoteService" />
-    <bean class="com.webtfolio.service.PortfolioService" />
-    
 
 </beans>

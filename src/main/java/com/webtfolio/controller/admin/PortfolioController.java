@@ -1,4 +1,4 @@
-package com.webtfolio.controller;
+package com.webtfolio.controller.admin;
 
 import java.util.List;
 
@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.webtfolio.entity.Portfolio;
-import com.webtfolio.service.PortfolioService;
+import com.webtfolio.service.admin.PortfolioService;
 
-@Controller("portfolio")
-@RequestMapping("/portfolio/")
+@Controller("adminPortfolio")
+@RequestMapping("/admin/portfolio/")
 public class PortfolioController {
-
+	
 	@Autowired
-	@Qualifier("portfolioService")
+	@Qualifier("adminPortfolioService")
 	private PortfolioService service;	//	= new NoteService();
 	
 	@RequestMapping("list")
@@ -26,7 +26,7 @@ public class PortfolioController {
 		
 		List<Portfolio> portfolios = service.getPortfolioList(page);
 		model.addAttribute("portfolios", portfolios);
-		return "portfolio.list";
+		return "admin.portfolio.list";
 	}
 	
 	@RequestMapping("{id}")
@@ -34,7 +34,7 @@ public class PortfolioController {
 	
 		/*Note note = service.getPortfolio(id);
 		model.addAttribute("portfolio", portfolio);*/
-		return "portfolio.detail";
+		return "admin.portfolio.detail";
 	}
 	
 }
