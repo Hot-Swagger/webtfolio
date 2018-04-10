@@ -11,6 +11,6 @@ public interface PortfolioDao {
 
 	@Select("select * from Note limit ${(page-1)*15},15")
 	List<Portfolio> getList(@Param("page") Integer page);
-	
+	@Select("select * from Note where id=#{id}")
 	Portfolio get(Integer id);
 }

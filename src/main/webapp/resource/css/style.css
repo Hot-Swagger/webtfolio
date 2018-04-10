@@ -63,6 +63,7 @@ a:active{
 	/* --- .header-menu -------------------------------------------------- */
 	.header-menu{
 		position: relative;
+		background: #181819;
 		z-index: 100;
 	}
 		.header-menu ul{
@@ -103,23 +104,16 @@ a:active{
 	/* --- .main-menu -------------------------------------------------- */
 	.main-menu{
 		margin-top: 1px;
-		visibility: hidden;
-		opacity: 0;
 		position: relative;
 		top: 0;
 		left: 0;
-		width: 100%;
-		transform: translateY(-3em);
-		z-index: -1;
-		transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.02s;
+		transform: translateY(-100%);
+		transition: 0.3s;
 		background: #181819;
 	}
 	.main-menu.show{
-		visibility: visible;
-		opacity: 1;
-		z-index: 1;
 		transform: translateY(0%);
-		/* transition-delay: 0s, 0s, 0.3s; */
+		transition: 0.3s;
 	}
 		.main-menu a{
 			color: #fff;
@@ -128,17 +122,30 @@ a:active{
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
+			overflow: auto;
 		}
 			.main-menu ul li{
 				padding: 10px 20px;
 				font-size: 16px;
 				color: #fff;
+				background: #181819;
 				border-bottom: 1px solid #7f7f7f;
+			}
+			.main-menu ul li.admin-menu
+			{	
+				height: 0;
+				padding: 0;
+				transition: 0.3s;
 			}
 			.main-menu ul li:hover{
 				background: #4ca9b4;
 				color: #fff;
 			}
+				.main-menu ul li.admin-menu.show{
+					hegith: 100%;
+					padding: 10px 20px;
+					transition: 0.3s;
+				}
 #admin-menu-select{
 	display: flex;
 	justify-content: space-between;
@@ -151,24 +158,6 @@ a:active{
 #admin-menu-select:hover{
 	cursor: pointer;
 }
-.amdin-menu{
-	visibility: hidden;
-	opacity: 0;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	transform: translateY(-3em);
-	z-index: -1;
-	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.02s;
-}
-	.admin-menu.show{
-		visibility: visible;
-		opacity: 1;
-		z-index: 1;
-		transform: translateY(0%);
-		transition-delay: 0s, 0s, 0.3s;
-	}
 				
 /* --- .main ------------------------------------------------------------ */
 .main{

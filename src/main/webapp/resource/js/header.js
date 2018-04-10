@@ -14,7 +14,7 @@ window.addEventListener("load",function(){
     adminButton.onclick = function(){
         for(var i=0; adminMenuList.length; i++){
 	        if(!adminMenuList[i].classList.contains("show"))
-	            adminMenuList[i].classList.add("show");
+	        	adminMenuList[i].classList.add("show");
 	        else
 	            adminMenuList[i].classList.remove("show");
         }

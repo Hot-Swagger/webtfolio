@@ -10,8 +10,8 @@
 		가져오고 싶은 레코드 갯수를 써주면 된다 (mysql)
 	</select> -->
 	
-	<select id="get" resultType="com.webtfolio.entity.Portfolio">
+	<!-- <select id="get" resultType="com.webtfolio.entity.Portfolio">
 		select * from Note where id=#{id}
-	</select>
+	</select> -->
 
 </mapper>
