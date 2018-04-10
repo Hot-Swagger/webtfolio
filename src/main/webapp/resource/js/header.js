@@ -1,8 +1,8 @@
 window.addEventListener("load",function(){
     var menuButton = document.querySelector(".header-menu li:last-child");
-    var adminButton = document.querySelector("#admin-menu-select");
+    var adminButton = document.querySelector("#admin-menu");
     var mainMenu = document.querySelector(".main-menu");
-    var adminMenuList = document.querySelectorAll(".admin-menu");
+    var adminMenuList = document.querySelector(".admin-sub-menu");
     
     menuButton.onclick = function(){
         if(!mainMenu.classList.contains("show"))
@@ -12,11 +12,9 @@ window.addEventListener("load",function(){
     };
 
     adminButton.onclick = function(){
-        for(var i=0; adminMenuList.length; i++){
-	        if(!adminMenuList[i].classList.contains("show"))
-	        	adminMenuList[i].classList.add("show");
-	        else
-	            adminMenuList[i].classList.remove("show");
-        }
+        if(!adminMenuList.classList.contains("show"))
+        	adminMenuList.classList.add("show");
+        else
+            adminMenuList.classList.remove("show");
     }
 });

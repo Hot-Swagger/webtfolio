@@ -48,6 +48,19 @@ a:active{
 	color: #fff;
 }
 
+.btn{
+	font-size: 16px;
+	color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #000;
+    padding: 10px 26px;
+}
+.btn:hover{
+	color: #000;
+	background-color: #fff;
+}
+
 /* --- .header ------------------------------------------------------------ */
 .header{
 	height: 50px;
@@ -118,50 +131,52 @@ a:active{
 		.main-menu a{
 			color: #fff;
 		}
-		.main-menu ul{
+		.main-menu>ul{
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
 			overflow: auto;
 		}
-			.main-menu ul li{
+			.main-menu>ul>li:not(.admin-sub-menu){
 				padding: 10px 20px;
-				font-size: 16px;
+				font-size: 14px;
 				color: #fff;
 				background: #181819;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 				border-bottom: 1px solid #7f7f7f;
 			}
-			.main-menu ul li.admin-menu
-			{	
-				height: 0;
-				padding: 0;
-				transition: 0.3s;
+			#admin-menu:hover{
+				cursor: pointer;
 			}
+				#admin-menu span{
+					display: flex;
+					align-items: center;
+				}
+				.admin-sub-menu ul{
+					max-height: 0px;
+					transition: all 0.3s ease;
+				}
+				.admin-sub-menu.show ul{
+					max-height: 84px;
+					transition: all 0.3s ease;
+				}
+					.admin-sub-menu ul li{
+						padding: 10px 20px;
+						font-size: 14px;
+						color: #fff;
+						background: #181819;
+						border-bottom: 1px solid #7f7f7f;
+					}
 			.main-menu ul li:hover{
 				background: #4ca9b4;
 				color: #fff;
 			}
-				.main-menu ul li.admin-menu.show{
-					hegith: 100%;
-					padding: 10px 20px;
-					transition: 0.3s;
-				}
-#admin-menu-select{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-#admin-menu-select span{
-	display: flex;
-	align-items: center;
-}
-#admin-menu-select:hover{
-	cursor: pointer;
-}
 				
 /* --- .main ------------------------------------------------------------ */
 .main{
-   margin-top: 51px;
+   padding-top: 51px;
 }
 
    .main .note-list{
@@ -205,6 +220,49 @@ a:active{
                color: #6bacca;
             }
 
+.index-profile{
+	padding: 0 20px;
+	min-height: 200px;
+	height: auto;
+	background-image: url("../images/black-and-white.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+	.index-profile p{
+		font-size: 16px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+	}
+.index-portfolio{
+	background: #fff;
+}
+	.index-portfolio h1{
+		text-align: center;
+		padding: 40px 20px;
+	}
+	.index-portfolio img{
+		padding: 5px;
+		width: calc(100% - 10px);
+	}
+#index-load-portfolio{
+	margin: 20px 0;
+	height: 50px;
+	line-height: 50px;
+	color: #a1a1a1;
+	background: #fff;
+    border: 2px solid #b9b9b9;
+	text-align: center;
+}
+#index-load-portfolio:hover{
+    color: #fff;
+	background: #4ca9b4;
+    border: 2px solid #4ca9b4;
+}
 /* --- .footer ------------------------------------------------------------ */
 .footer{
 	padding: 40px 20px;
