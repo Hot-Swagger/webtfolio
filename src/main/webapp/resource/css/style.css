@@ -156,11 +156,11 @@ a:active{
 				}
 				.admin-sub-menu ul{
 					max-height: 0px;
-					transition: all 0.3s ease;
+					transition: 0.2s;
 				}
 				.admin-sub-menu.show ul{
 					max-height: 84px;
-					transition: all 0.3s ease;
+					transition: 0.2s;
 				}
 					.admin-sub-menu ul li{
 						padding: 10px 20px;
@@ -245,10 +245,49 @@ a:active{
 		text-align: center;
 		padding: 40px 20px;
 	}
-	.index-portfolio img{
-		padding: 5px;
-		width: calc(100% - 10px);
+	.portfolio-frame{
+		width: 360px;
+		height: 250px;
+		position: relative;
 	}
+		.portfolio-frame>img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 15px 5px 5px 5px;
+			width: 350px;
+			height: 230px;
+		}
+		.portfolio-rollover{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 15px 5px 5px 5px;
+			width: 350px;
+			height: 230px;
+			/* -webkit-linear-gradient(top,rgba(76,169,180,0.8) 0,#4ca9b4 100%) */
+			background: rgba(76,169,180,0.8);
+			z-index: 100;
+		}
+			.portfolio-rollover a,
+			.portfolio-rollover img{
+				display: flex;
+				justify-content: center;
+				width: 54px;
+				height: 54px;
+			}
+			.portfolio-rollover p{
+				margin: 0;
+				padding: 0px 20px;
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 1.88;
+				
+			}
 #index-load-portfolio{
 	margin: 20px 0;
 	height: 50px;
