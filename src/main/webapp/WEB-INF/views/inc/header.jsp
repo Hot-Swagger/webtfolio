@@ -7,7 +7,7 @@
 	<nav class="header-menu">
 		<h1 class="hidden">헤더메뉴</h1>
 		<ul>
-			<li><a href=""></a></li>
+			<li><a href="${root}/home/index"></a></li>
 			<li><img src="${root}/resource/images/ic_menu_white_24dp_1x.png" alt="메뉴"></li>
 		</ul>
 	</nav>
@@ -20,7 +20,7 @@
 			<li id="admin-menu">
 				<span>ADMIN MENU</span>
 				<span>
-					<img src="${root}/resource/images/down-arrow.png">
+					<img src="${root}/resource/images/ic_keyboard_arrow_down_white_24dp_1x.png">
 				</span>
 			</li>
 			<li class="admin-sub-menu">
@@ -33,4 +33,7 @@
 			<li class="login-menu"><a href="${root}/logout">LOG OUT</a></li>
 		</ul>
 	</nav>
+	<div class=topBtn onclick="window.scrollTo(0,0);">
+		<img alt="top" src="${root}/resource/images/ic_arrow_drop_up_white_36dp_1x.png">
+	</div>
 </header>

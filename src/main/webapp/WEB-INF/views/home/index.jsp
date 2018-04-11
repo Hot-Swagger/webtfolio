@@ -13,8 +13,8 @@
 		<article class="portfolio-frame">
 			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
-				<a>
-					<img src="${root}/resource/images/link.png" alt="링크이미지">
+				<a href="${root}/portfolio/detail">
+					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
 				</a>
 				<p>여행기록 웹페이지 "여기"</p>
 			</div>
@@ -22,8 +22,8 @@
 		<article class="portfolio-frame">
 			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
-				<a>
-					<img src="${root}/resource/images/link.png" alt="링크이미지">
+				<a href="${root}/portfolio/detail">
+					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
 				</a>
 				<p>여행기록 웹페이지 "여기"</p>
 			</div>
@@ -31,8 +31,8 @@
 		<article class="portfolio-frame">
 			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
-				<a>
-					<img src="${root}/resource/images/link.png" alt="링크이미지">
+				<a href="${root}/portfolio/detail">
+					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
 				</a>
 				<p>여행기록 웹페이지 "여기"</p>
 			</div>

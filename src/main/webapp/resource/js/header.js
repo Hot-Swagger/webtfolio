@@ -12,9 +12,14 @@ window.addEventListener("load",function(){
     };
 
     adminButton.onclick = function(){
-        if(!adminMenuList.classList.contains("show"))
-        	adminMenuList.classList.add("show");
-        else
+        var menubuttonImg = adminButton.querySelector("span:last-child>img");
+        if(!adminMenuList.classList.contains("show")){
+            adminMenuList.classList.add("show");
+            menubuttonImg.src= menubuttonImg.src.replace("down","up");
+        }
+        else{
             adminMenuList.classList.remove("show");
+            menubuttonImg.src = menubuttonImg.src.replace("up","down");
+        }
     }
 });

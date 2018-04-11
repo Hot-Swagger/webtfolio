@@ -72,6 +72,7 @@ a:active{
 	justify-content: flex-start;
 	background: #181819;
 	border-bottom: 1px solid #7f7f7f;
+	z-index: 100;
 }
 	/* --- .header-menu -------------------------------------------------- */
 	.header-menu{
@@ -114,6 +115,22 @@ a:active{
 					width: 24px;
 					height: 24px;
 				}
+.topBtn{
+	position:fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 48px;
+	height: 40px;
+	z-index: 999;
+	border-radius: 5px;
+	background: rgba(60,60,60,.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.topBtn:hover{
+	cursor: pointer;	
+}
 	/* --- .main-menu -------------------------------------------------- */
 	.main-menu{
 		margin-top: 1px;
@@ -258,6 +275,11 @@ a:active{
 			width: 350px;
 			height: 230px;
 		}
+		.portfolio-frame>img:hover+div,
+		.portfolio-rollover:hover{
+			transform: scaleY(1);
+			transition: 0.3s
+		}
 		.portfolio-rollover{
 			display: flex;
 			flex-direction: column;
@@ -269,17 +291,25 @@ a:active{
 			margin: 15px 5px 5px 5px;
 			width: 350px;
 			height: 230px;
-			/* -webkit-linear-gradient(top,rgba(76,169,180,0.8) 0,#4ca9b4 100%) */
-			background: rgba(76,169,180,0.8);
-			z-index: 100;
+			background: rgba(76,169,180,.8);
+			z-index: 10;
+			transform: scaleY(0);
+			transition: 0.3s
 		}
 			.portfolio-rollover a,
 			.portfolio-rollover img{
 				display: flex;
 				justify-content: center;
-				width: 54px;
-				height: 54px;
+				width: 48px;
+				height: 48px;
+				border-radius: 24px; 
+				background: rgba(13,28,30,.8);
+				transform: rotate(67.5deg);
+				opacity: .9;
 			}
+				.portfolio-rollover a:hover{
+					opacity: 1;
+				}
 			.portfolio-rollover p{
 				margin: 0;
 				padding: 0px 20px;
@@ -307,7 +337,7 @@ a:active{
 	padding: 40px 20px;
 	color: #eaeaea;
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.88;
     text-align: center;
     background: #181819;
     border-top: 1px solid #7f7f7f;
