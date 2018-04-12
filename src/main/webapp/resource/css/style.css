@@ -285,7 +285,7 @@ a:active{
 }
 	.index-portfolio h1{
 		text-align: center;
-		padding: 40px 20px;
+		padding: 40px 20px 25px 20px;
 	}
 	.portfolio-frame{
 		width: 360px;
@@ -297,8 +297,9 @@ a:active{
 			top: 0;
 			left: 0;
 			margin: 15px 5px 5px 5px;
-			width: 350px;
-			height: 230px;
+			width: 340px;
+			height: 220px;
+			border: 5px solid rgba(50,50,50,.8);
 		}
 		.portfolio-frame>img:hover+div,
 		.portfolio-rollover:hover{
@@ -370,12 +371,26 @@ a:active{
 .detail-main-container{
 	background: #121213;
 	color: #fff;
+	padding-bottom: 40px;
+}
+
+.portfolio-detail-visual{
+	position: relative;
+	width: 360px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .portfolio-detail-visual:after{
-	padding: 0 20px;
-	min-height: 200px;
-	height: auto;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 360px;
+	height: 200px;
 	background-image: url("../images/portfolio-detail-visual.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -384,6 +399,7 @@ a:active{
 	justify-content: space-around;
 	align-items: center;
 	opacity: .5;
+	z-index: 1;
 }
 	.portfolio-detail-visual p{
 		margin: 0;
@@ -393,6 +409,7 @@ a:active{
 		text-align: center;
 		line-height: 42px;
 		word-break: keep-all;
+		z-index: 2;
 	}
 .portfolio-img-slider{
 	margin-top: 50px;
@@ -400,11 +417,122 @@ a:active{
 	height: 250px;
 }
 	.portfolio-img-slider>img{
-		margin: 5px;
-		width: 350px;
-		height: 230px;
+		margin: 10px;
+		width: 340px;
+		height: 220px;
 	}
 
+.portfolio-detail{
+	padding: 15px 10px;
+}
+	.portfolio-detail h1{
+		font-size: 20px;
+		font-weight: bold;
+		color: #4ca9b4;
+		
+	}
+.portfolio-detail-info{
+	
+}
+..portfolio-detail-description{
+	
+}
+
+/* --- profile main ------------------------------------------------------------ */
+.profile-main-container{
+	background: #121213;
+	color: #fff;
+}
+
+.profile-detail-visual{
+	position: relative;
+	width: 360px;
+	height: 442px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.profile-detail-visual:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 360px;
+	height: 442px;
+	background-image: url("../images/wood-img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	opacity: .5;
+	z-index: 1;
+}
+	.profile-detail-visual p{
+		margin: 0;
+		font-size: 36px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		line-height: 42px;
+		word-break: keep-all;
+		z-index: 2;
+	}
+
+/* --- experience main ------------------------------------------------------------ */
+.experience-main-container{
+	background: #121213;
+	color: #fff;
+}
+
+.experience-detail-visual{
+	position: relative;
+	width: 360px;
+	height: 442px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.experience-detail-visual:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 360px;
+	height: 442px;
+	background-image: url("../images/book-ring-img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	opacity: .5;
+	z-index: 1;
+}
+	.experience-detail-visual p{
+		margin: 0;
+		font-size: 36px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		line-height: 42px;
+		word-break: keep-all;
+		z-index: 2;
+	}
+	
+/* --- login main ------------------------------------------------------------ */
+.login-main{
+   padding-top: 91px;
+   height: calc(100vh - 150px);
+}
+	
 /* --- .footer ------------------------------------------------------------ */
 .footer{
 	padding: 40px 20px;

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,7 +22,7 @@ public class PortfolioController {
 	@Qualifier("portfolioService")
 	private PortfolioService service;	//	= new NoteService();
 	
-	@RequestMapping("list")
+	@GetMapping("list")
 	public String list(@RequestParam(value="p",defaultValue="1")Integer page, Model model) {
 		
 		List<Portfolio> portfolios = service.getPortfolioList(page);
@@ -29,7 +30,7 @@ public class PortfolioController {
 		return "portfolio.list";
 	}
 	
-	@RequestMapping("{id}")
+	@GetMapping("{id}")
 	public String detail(@PathVariable("id")Integer id, Model model) {
 	
 		/*Note note = service.getPortfolio(id);

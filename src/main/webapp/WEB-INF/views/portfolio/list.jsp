@@ -6,7 +6,7 @@
 <script src="${root}/resource/js/Nwagon.js"></script>
 <main class="main">
 	<section>
-		<h1>Language & Platform</h1>
+		<h1 style="padding: 0 10px;">Programming skills</h1>
 		<div id="chart_d" style="margin-left:-10px;"></div>
 		<script>
 			
@@ -31,8 +31,8 @@
 		<h1 class="hidden">PORTFOLIO list</h1>
 		<div class="portfolio-category">
 			<button class="btn-lg btn-bright">ALL</button>
-			<button class="btn-lg btn-bright">SI PROJECT</button>
-			<button class="btn-lg btn-bright">APPLICATION</button>
+			<button class="btn-lg btn-bright">SI 프로젝트</button>
+			<button class="btn-lg btn-bright">어플리케이션</button>
 		</div>
 		<article class="portfolio-frame">
 			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
