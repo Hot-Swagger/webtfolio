@@ -5,13 +5,13 @@
 <section class="main">
 	<article class="index-profile">
 		<h1 class="hidden">프로필</h1>
-		<p>Hello, I am a <br/>Computer Programming <br/>Engineer~</p>
+		<p>Hello Java !!</p>
 		<a href="${root}/profile/detail" class="btn-md btn-dark btn-profile-link">프로필 보기</a>
 	</article>
 	<section class="index-portfolio">
 		<h1>RECENTLY PORTFOLIO</h1>
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
 				<a href="${root}/portfolio/1">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
@@ -20,7 +20,7 @@
 			</div>
 		</article>
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
 				<a href="${root}/portfolio/2">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
@@ -29,7 +29,7 @@
 			</div>
 		</article>
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
 				<a href="${root}/portfolio/3">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">

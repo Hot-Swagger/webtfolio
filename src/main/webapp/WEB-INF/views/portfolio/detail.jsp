@@ -10,7 +10,7 @@
 		</div>
 		<section class="portfolio-img-slider">
 			<h1 class="hidden">이미지 슬라이드</h1>
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 		</section>
 		<section class="portfolio-detail portfolio-detail-info">
 			<h1>프로젝트 정보</h1>

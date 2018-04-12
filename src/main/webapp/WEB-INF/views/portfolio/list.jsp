@@ -35,7 +35,7 @@
 			<button class="btn-lg btn-bright">어플리케이션</button>
 		</div>
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
 				<a href="${root}/portfolio/1">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
@@ -44,7 +44,7 @@
 			</div>
 		</article>
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
 				<a href="${root}/portfolio/2">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
@@ -53,7 +53,7 @@
 			</div>
 		</article>
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">
 				<a href="${root}/portfolio/3">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
