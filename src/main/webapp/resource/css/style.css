@@ -47,18 +47,43 @@ a:active{
 	background: #4ca9b4;
 	color: #fff;
 }
-
-.btn{
+.btn-md{
 	font-size: 16px;
-	color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: #000;
-    padding: 10px 26px;
+	padding: 10px 26px;
+	text-align: center;
+}
+.btn-lg{
+	font-size: 14px;
+	padding: 10px 10px;
+	width: 105px;
+	height: 60px;
+	word-break: break-all;
+	text-align: center;
+	overflow: hidden;
 }
 .btn:hover{
+	cursor: pointer;
+}
+.btn-dark{
+	color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.btn-dark:hover{
 	color: #000;
 	background-color: #fff;
+}
+.btn-bright{
+	color: #a1a1a1;
+	background: #fff;
+    border: 2px solid #b9b9b9;
+    border-radius: 5px;
+}
+.btn-bright:hover{
+	color: #fff;
+	background: #4ca9b4;
+    border: 2px solid #4ca9b4;
 }
 
 /* --- .header ------------------------------------------------------------ */
@@ -332,6 +357,54 @@ a:active{
 	background: #4ca9b4;
     border: 2px solid #4ca9b4;
 }
+/* --- portfolio main ------------------------------------------------------------ */
+
+.portfolio-category{
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* --- portfolio-detail main ------------------------------------------------------------ */
+.detail-main-container{
+	background: #121213;
+	color: #fff;
+}
+
+.portfolio-detail-visual:after{
+	padding: 0 20px;
+	min-height: 200px;
+	height: auto;
+	background-image: url("../images/portfolio-detail-visual.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	opacity: .5;
+}
+	.portfolio-detail-visual p{
+		margin: 0;
+		font-size: 36px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		line-height: 42px;
+		word-break: keep-all;
+	}
+.portfolio-img-slider{
+	margin-top: 50px;
+	width: 360px;
+	height: 250px;
+}
+	.portfolio-img-slider>img{
+		margin: 5px;
+		width: 350px;
+		height: 230px;
+	}
+
 /* --- .footer ------------------------------------------------------------ */
 .footer{
 	padding: 40px 20px;

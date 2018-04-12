@@ -6,7 +6,7 @@
 	<article class="index-profile">
 		<h1 class="hidden">프로필</h1>
 		<p>Hello, I am a <br/>Computer Programming <br/>Engineer~</p>
-		<a href="${root}/profile/detail" class="btn btn-profile-link">프로필 보기</a>
+		<a href="${root}/profile/detail" class="btn-md btn-dark btn-profile-link">프로필 보기</a>
 	</article>
 	<section class="index-portfolio">
 		<h1>RECENTLY PORTFOLIO</h1>

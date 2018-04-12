@@ -27,18 +27,42 @@
 			Nwagon.chart(options);
 		</script>
 	</section>
-	<section class="note-list">
-		<h1>PORTFOLIO LIST</h1>
-		<ul>
-			<c:forEach var="pf" items="${portfolios}">
-			<li>
-				<div><a href="">${pf.title}</a></div>
-				<div>
-					${pf.content}
-				</div>
-				<div><span>${pf.chapterId}</span><span>${pf.regDate}</span></div>
-			</li>			
-			</c:forEach>
-		</ul>
+	<section class="index-portfolio">
+		<h1 class="hidden">PORTFOLIO list</h1>
+		<div class="portfolio-category">
+			<button class="btn-lg btn-bright">ALL</button>
+			<button class="btn-lg btn-bright">SI PROJECT</button>
+			<button class="btn-lg btn-bright">APPLICATION</button>
+		</div>
+		<article class="portfolio-frame">
+			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<div class="portfolio-rollover">
+				<a href="${root}/portfolio/1">
+					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
+				</a>
+				<p>여행기록 웹페이지 "여기"</p>
+			</div>
+		</article>
+		<article class="portfolio-frame">
+			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<div class="portfolio-rollover">
+				<a href="${root}/portfolio/2">
+					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
+				</a>
+				<p>여행기록 웹페이지 "여기"</p>
+			</div>
+		</article>
+		<article class="portfolio-frame">
+			<img src="${root}/resource/images/portfolio-spl.png" alt="포폴이미지"/>
+			<div class="portfolio-rollover">
+				<a href="${root}/portfolio/3">
+					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
+				</a>
+				<p>여행기록 웹페이지 "여기"</p>
+			</div>
+		</article>
 	</section>
+	<div id="index-load-portfolio">
+		LOAD MORE PORTFOLIO
+	</div>
 </main>
