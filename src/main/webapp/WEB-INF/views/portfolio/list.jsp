@@ -65,4 +65,20 @@
 	<div id="index-load-portfolio">
 		LOAD MORE PORTFOLIO
 	</div>
+	<section class="note-list">
+		<h1 class="hidden">노트목록</h1>
+		<ul>
+			<c:forEach var="portfolio" items="${portfolios}">
+			<li class="text">
+				<div><a href="${portfolio.id}">${portfolio.title}</a></div>
+				<!-- <div class="text ellipsis"> -->
+				<div>
+					<%-- <span class="text-concat">${note.content}</span> --%>
+					${portfolio.content}
+				</div>
+				<div><span>분류</span><span>${portfolio.regDate}</span></div>
+			</li>			
+			</c:forEach>
+		</ul>
+	</section>
 </main>

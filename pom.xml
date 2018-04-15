@@ -8,6 +8,21 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>webtfolio</name>
 	<url>http://maven.apache.org</url>
+	
+	<!-- web.xml 없이 진행하겠다는 설정 추가 -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>

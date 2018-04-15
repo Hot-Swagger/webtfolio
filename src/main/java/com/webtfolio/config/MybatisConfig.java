@@ -23,6 +23,7 @@ public class MybatisConfig {
 	
 	@Bean(destroyMethod = "close")
 	public BasicDataSource dataSource() {
+		
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://211.238.142.97/newlecture?autoReconnect=true&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8");
@@ -32,6 +33,7 @@ public class MybatisConfig {
 		dataSource.setInitialSize(20);
 		dataSource.setMaxActive(30);
 		return dataSource;
+		
 	}
 		
 	@Bean
@@ -40,7 +42,7 @@ public class MybatisConfig {
 		SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
 		factory.setDataSource(dataSource());
 		factory.setMapperLocations(new Resource[] {
-				new ClassPathResource("com/webtfolio/dao/mybatis/mapper/*.xml")
+				new ClassPathResource("com/webtfolio/dao/mybatis/mapper/PortfolioDaoMapper.xml")
 		});
 		return factory;
 	}

@@ -7,7 +7,7 @@
 	<nav class="header-menu">
 		<h1 class="hidden">헤더메뉴</h1>
 		<ul>
-			<li><a href="${root}/home/index"></a></li>
+			<li><a href="${root}/index"></a></li>
 			<li><img src="${root}/resource/images/ic_menu_white_24dp_1x.png" alt="메뉴"></li>
 		</ul>
 	</nav>
@@ -29,7 +29,7 @@
 					<li><a href="${root}/admin/portfolio/reg">- REG PORTFOLIO</a></li>
 				</ul>
 			</li>
-			<li class="login-menu"><a href="${root}/admin/home/login">LOG IN</a></li>
+			<li class="login-menu"><a href="${root}/login">LOG IN</a></li>
 			<li class="login-menu"><a href="${root}/logout">LOG OUT</a></li>
 		</ul>
 	</nav>
