@@ -16,24 +16,23 @@ public class WebtfolioSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		http
+			.csrf().disable()
 			.authorizeRequests()
 			//--------------------------------
-			.antMatchers("/*","/profile/**","/experience/**","/portfolio/**").permitAll()
-			.antMatchers("/resource/**").permitAll()
+			//.antMatchers("/*","/profile/**","/experience/**","/portfolio/**").permitAll()
+			//.antMatchers("/resource/**").permitAll()
 			.antMatchers("/admin/**").hasRole("ADMIN")	//	.access("hasRole('AUTHOR') or hasRole('ADMIN')")
 			//--------------------------------
-			.anyRequest().authenticated()	// 모든요청에 인증이 필요하게 설정하는 내용
+			//.anyRequest().authenticated()	// 모든요청에 인증이 필요하게 설정하는 내용
 			.and()
 		.formLogin()
 			.loginPage("/login")
 			.loginProcessingUrl("/login")	// 요청 URL이름을 변경하는 기능
-			.defaultSuccessUrl("/index")
 			.and()
 		.logout()
 			.logoutSuccessUrl("/index")
 			.invalidateHttpSession(true);
 			
-		http.csrf().disable();
 	
 	}
 	
