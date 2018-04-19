@@ -14,6 +14,14 @@ public class Account {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Account(String id, String pwd, String email, boolean enabled) {
+		super();
+		this.id = id;
+		this.pwd = pwd;
+		this.email = email;
+		this.enabled = enabled;
+	}
+
 	public Account(String id, String pwd, String email, Date regDate, boolean enabled) {
 		super();
 		this.id = id;

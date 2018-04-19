@@ -18,8 +18,20 @@ public class Portfolio2 {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Portfolio2(int id, String title, String category, String devPeriod, int persons, String role, String detail,
+	public Portfolio2(String title, String category, String devPeriod, int persons, String role, String detail,
 			String accountId) {
+		super();
+		this.title = title;
+		this.category = category;
+		this.devPeriod = devPeriod;
+		this.persons = persons;
+		this.role = role;
+		this.detail = detail;
+		this.accountId = accountId;
+	}
+
+	public Portfolio2(int id, String title, String category, String devPeriod, int persons, String role, String detail,
+			Date regDate, String accountId) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -28,6 +40,7 @@ public class Portfolio2 {
 		this.persons = persons;
 		this.role = role;
 		this.detail = detail;
+		this.regDate = regDate;
 		this.accountId = accountId;
 	}
 

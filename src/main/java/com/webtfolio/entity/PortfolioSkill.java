@@ -3,17 +3,17 @@ package com.webtfolio.entity;
 public class PortfolioSkill {
 
 	private int id;
-	private String skill;
+	private String skillId;
 	private int portfolioId;
 	
 	public PortfolioSkill() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PortfolioSkill(int id, String skill, int portfolioId) {
+	public PortfolioSkill(int id, String skillId, int portfolioId) {
 		super();
 		this.id = id;
-		this.skill = skill;
+		this.skillId = skillId;
 		this.portfolioId = portfolioId;
 	}
 
@@ -25,12 +25,12 @@ public class PortfolioSkill {
 		this.id = id;
 	}
 
-	public String getSkill() {
-		return skill;
+	public String getSkillId() {
+		return skillId;
 	}
 
-	public void setSkill(String skill) {
-		this.skill = skill;
+	public void setSkillId(String skillId) {
+		this.skillId = skillId;
 	}
 
 	public int getPortfolioId() {

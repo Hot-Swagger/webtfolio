@@ -18,6 +18,19 @@ public class LanguageCert {
 		// TODO Auto-generated constructor stub
 	}
 
+	public LanguageCert(String name, String certNo, String publisher, String level, int score, Date pubDate,
+			Date effDate, int profileId) {
+		super();
+		this.name = name;
+		this.certNo = certNo;
+		this.publisher = publisher;
+		this.level = level;
+		this.score = score;
+		this.pubDate = pubDate;
+		this.effDate = effDate;
+		this.profileId = profileId;
+	}
+
 	public LanguageCert(int id, String name, String certNo, String publisher, String level, int score, Date pubDate,
 			Date effDate, int profileId) {
 		super();

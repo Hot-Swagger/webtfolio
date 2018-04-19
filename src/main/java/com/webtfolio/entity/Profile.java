@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Profile {
 
-	private int id;
+	private String accountId;
 	private String name;
 	private String gender;
 	private Date birthDay;
@@ -14,16 +14,15 @@ public class Profile {
 	private String phone;
 	private String email;
 	private Date regDate;
-	private String accountId;
 	
 	public Profile() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Profile(int id, String name, String gender, Date birthDay, String address, String school, String major,
-			String phone, String email, String accountId) {
+	public Profile(String accountId, String name, String gender, Date birthDay, String address, String school,
+			String major, String phone, String email) {
 		super();
-		this.id = id;
+		this.accountId = accountId;
 		this.name = name;
 		this.gender = gender;
 		this.birthDay = birthDay;
@@ -32,13 +31,12 @@ public class Profile {
 		this.major = major;
 		this.phone = phone;
 		this.email = email;
-		this.accountId = accountId;
 	}
 
-	public Profile(int id, String name, String gender, Date birthDay, String address, String school, String major,
-			String phone, String email, Date regDate, String accountId) {
+	public Profile(String accountId, String name, String gender, Date birthDay, String address, String school,
+			String major, String phone, String email, Date regDate) {
 		super();
-		this.id = id;
+		this.accountId = accountId;
 		this.name = name;
 		this.gender = gender;
 		this.birthDay = birthDay;
@@ -48,15 +46,14 @@ public class Profile {
 		this.phone = phone;
 		this.email = email;
 		this.regDate = regDate;
+	}
+
+	public String getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(String accountId) {
 		this.accountId = accountId;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -131,12 +128,4 @@ public class Profile {
 		this.regDate = regDate;
 	}
 
-	public String getAccountId() {
-		return accountId;
-	}
-
-	public void setAccountId(String accountId) {
-		this.accountId = accountId;
-	}
-	
 }

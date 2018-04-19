@@ -18,10 +18,9 @@ public class Experience {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Experience(int id, Date entDate, Date leavDate, boolean inOffice, String company, String position,
-			String business, String detail, String accountId) {
+	public Experience(Date entDate, Date leavDate, boolean inOffice, String company, String position, String business,
+			String detail, String accountId) {
 		super();
-		this.id = id;
 		this.entDate = entDate;
 		this.leavDate = leavDate;
 		this.inOffice = inOffice;

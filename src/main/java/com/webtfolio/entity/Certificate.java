@@ -16,6 +16,16 @@ public class Certificate {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Certificate(String name, String certNo, String publisher, String level, Date pubDate, int profileId) {
+		super();
+		this.name = name;
+		this.certNo = certNo;
+		this.publisher = publisher;
+		this.level = level;
+		this.pubDate = pubDate;
+		this.profileId = profileId;
+	}
+
 	public Certificate(int id, String name, String certNo, String publisher, String level, Date pubDate,
 			int profileId) {
 		super();

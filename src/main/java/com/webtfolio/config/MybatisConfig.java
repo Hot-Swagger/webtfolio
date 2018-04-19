@@ -1,5 +1,7 @@
 package com.webtfolio.config;
 
+import java.io.IOException;
+
 import org.apache.commons.dbcp.BasicDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -9,6 +11,7 @@ import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -37,13 +40,15 @@ public class MybatisConfig {
 	}
 		
 	@Bean
-	public SqlSessionFactoryBean sqlSessionFactory() {
+	public SqlSessionFactoryBean sqlSessionFactory() throws IOException {
 		
+		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
 		factory.setDataSource(dataSource());
-		factory.setMapperLocations(new Resource[] {
+		/*factory.setMapperLocations(new Resource[] {
 				new ClassPathResource("com/webtfolio/dao/mybatis/mapper/PortfolioDaoMapper.xml")
-		});
+		});*/
+		factory.setMapperLocations(resolver.getResources("com/webtfolio/dao/mybatis/mapper/*.xml"));
 		return factory;
 	}
 	
