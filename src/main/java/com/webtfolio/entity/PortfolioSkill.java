@@ -10,6 +10,12 @@ public class PortfolioSkill {
 		// TODO Auto-generated constructor stub
 	}
 
+	public PortfolioSkill(String skillId, int portfolioId) {
+		super();
+		this.skillId = skillId;
+		this.portfolioId = portfolioId;
+	}
+
 	public PortfolioSkill(int id, String skillId, int portfolioId) {
 		super();
 		this.id = id;

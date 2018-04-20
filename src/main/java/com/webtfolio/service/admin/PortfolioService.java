@@ -11,7 +11,7 @@ import com.webtfolio.entity.Portfolio;
 
 @Service("adminPortfolioService")
 public class PortfolioService {
-
+	/*관리자 포트폴리오 페이지 insert, update, delete 서비스 구현*/
 	@Autowired
 	private PortfolioDao portfolioDao;
 

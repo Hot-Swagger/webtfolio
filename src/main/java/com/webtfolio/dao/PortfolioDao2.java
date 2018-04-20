@@ -14,9 +14,14 @@ import com.webtfolio.entity.Portfolio2;
 public interface PortfolioDao2 {
 
 	@Select("select * from Portfolio "
-			+ "where accountId=#{accountId} "
+			+ "where accountId=#{accountId} order by regDate desc "
 			+ "limit ${(page-1)*9},9")
 	List<Portfolio2> getList(String accountId, @Param("page")Integer page);
+	
+	@Select("select * from Portfolio "
+			+ "where accountId=#{accountId} and category=#{category} order by regDate desc "
+			+ "limit ${(page-1)*9},9")
+	List<Portfolio2> getCategoryList(String accountId, String category, @Param("page")Integer page);
 	
 	@Select("select * from Portfolio where id=#{id}")
 	Portfolio2 get(Integer id);

@@ -9,9 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.webtfolio.dao.PortfolioDao;
 import com.webtfolio.entity.Portfolio;
 
-@Service("portfolioService")
+@Service
 public class PortfolioService {
-
+	/*포트폴리오 페이지 select 서비스 구현*/
 	@Autowired
 	private PortfolioDao portfolioDao;
 	
