@@ -2,12 +2,14 @@ package com.webtfolio.dao.mybatis;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.webtfolio.dao.ProfileDao;
 import com.webtfolio.dao.RoleDao;
 import com.webtfolio.entity.Profile;
 import com.webtfolio.entity.Role;
 
+@Repository
 public class MybatisRoleDao implements RoleDao {
 
 	@Autowired

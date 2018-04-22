@@ -14,9 +14,47 @@
 		</section>
 		<section class="portfolio-detail portfolio-detail-info">
 			<h1>프로젝트 정보</h1>
+			<div>
+				<span>사용기술: </span>
+				<div>
+					<a>기술1</a>
+					<a>기술2</a>
+					<a>기술3</a>
+				</div>
+			</div>
+			<div>
+				<span>카테고리: </span>
+				<div>
+					<a>SI 프로젝트</a>
+				</div>
+			</div>
+			<div>
+				<span>개발기간: </span>
+				<div>
+					<span>3개월</span>
+				</div>
+			</div>
+			<div>
+				<span>참여인원: </span>
+				<div>
+					<span>6명</span>
+				</div>
+			</div>
 		</section>
 		<section class="portfolio-detail portfolio-detail-description">
 			<h1>프로젝트 상세설명</h1>
+			<div>
+				<span>담당역할: </span>
+				<div>
+					<span></span>
+				</div>
+			</div>
+			<div>
+				<span>상세설명: </span>
+				<div>
+					<span></span>
+				</div>
+			</div>
 		</section>
 	</div>
 </main>

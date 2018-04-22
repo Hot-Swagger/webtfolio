@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.webtfolio.dao.ImageDao;
 import com.webtfolio.dao.LanguageCertDao;
 import com.webtfolio.entity.Image;
 import com.webtfolio.entity.LanguageCert;
 
+@Repository
 public class MybatisLanguageCertDao implements LanguageCertDao {
 
 	@Autowired

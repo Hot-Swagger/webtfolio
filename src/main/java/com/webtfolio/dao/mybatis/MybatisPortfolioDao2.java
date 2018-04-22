@@ -4,10 +4,12 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.webtfolio.dao.PortfolioDao2;
 import com.webtfolio.entity.Portfolio2;
 
+@Repository
 public class MybatisPortfolioDao2 implements PortfolioDao2 {
 
 	@Autowired
