@@ -5,6 +5,8 @@ public class Skill {
 	private String skillId;
 	private String description;
 	
+	private PortfolioSkill portfolioSkill;
+	
 	public Skill() {
 		// TODO Auto-generated constructor stub
 	}
@@ -29,6 +31,14 @@ public class Skill {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public PortfolioSkill getPortfolioSkill() {
+		return portfolioSkill;
+	}
+
+	public void setPortfolioSkill(PortfolioSkill portfolioSkill) {
+		this.portfolioSkill = portfolioSkill;
 	}
 	
 }

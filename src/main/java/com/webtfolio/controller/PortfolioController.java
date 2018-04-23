@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.webtfolio.entity.Portfolio;
+import com.webtfolio.entity.Portfolio2;
 import com.webtfolio.service.PortfolioService;
 
 @Controller("portfolio")
@@ -23,7 +23,7 @@ public class PortfolioController {
 	@GetMapping("list")
 	public String list(@RequestParam(value="p",defaultValue="1")Integer page, Model model) {
 		
-		List<Portfolio> portfolios = service.getPortfolioList(page);
+		List<Portfolio2> portfolios = service.getPortfolioList("dskim", page);
 		model.addAttribute("portfolios", portfolios);
 		return "portfolio.list";
 	}

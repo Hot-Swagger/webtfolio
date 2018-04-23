@@ -14,6 +14,8 @@ public class Experience {
 	private Date regDate;
 	private String accountId;
 	
+	private Account account;
+	
 	public Experience() {
 		// TODO Auto-generated constructor stub
 	}
@@ -124,6 +126,14 @@ public class Experience {
 
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
+	}
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 	
 }

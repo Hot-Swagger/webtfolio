@@ -14,6 +14,8 @@ public class LanguageCert {
 	private Date effDate;
 	private int profileId;
 	
+	private Profile profile;
+	
 	public LanguageCert() {
 		// TODO Auto-generated constructor stub
 	}
@@ -115,6 +117,14 @@ public class LanguageCert {
 
 	public void setProfileId(int profileId) {
 		this.profileId = profileId;
+	}
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
 	}
 	
 }

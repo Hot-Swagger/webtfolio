@@ -74,7 +74,7 @@
 				<!-- <div class="text ellipsis"> -->
 				<div>
 					<%-- <span class="text-concat">${note.content}</span> --%>
-					${portfolio.content}
+					${portfolio.detail}
 				</div>
 				<div><span>분류</span><span>${portfolio.regDate}</span></div>
 			</li>			

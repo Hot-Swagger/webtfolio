@@ -10,6 +10,11 @@ public class Account {
 	private Date regDate;
 	private boolean enabled;
 	
+	private AccountRole accountRole;
+	private Profile profile;
+	private Experience experience;
+	private Portfolio portfolio;
+	
 	public Account() {
 		// TODO Auto-generated constructor stub
 	}
@@ -69,6 +74,38 @@ public class Account {
 
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
+	}
+
+	public AccountRole getAccountRole() {
+		return accountRole;
+	}
+
+	public void setAccountRole(AccountRole accountRole) {
+		this.accountRole = accountRole;
+	}
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
+	}
+
+	public Experience getExperience() {
+		return experience;
+	}
+
+	public void setExperience(Experience experience) {
+		this.experience = experience;
+	}
+
+	public Portfolio getPortfolio() {
+		return portfolio;
+	}
+
+	public void setPortfolio(Portfolio portfolio) {
+		this.portfolio = portfolio;
 	}
 	
 }

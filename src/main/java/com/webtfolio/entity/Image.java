@@ -8,6 +8,8 @@ public class Image {
 	private int order;
 	private int portfolioId;
 	
+	private Portfolio portfolio;
+	
 	public Image() {
 		// TODO Auto-generated constructor stub
 	}
@@ -67,6 +69,14 @@ public class Image {
 
 	public void setPortfolioId(int portfolioId) {
 		this.portfolioId = portfolioId;
+	}
+
+	public Portfolio getPortfolio() {
+		return portfolio;
+	}
+
+	public void setPortfolio(Portfolio portfolio) {
+		this.portfolio = portfolio;
 	}
 
 }

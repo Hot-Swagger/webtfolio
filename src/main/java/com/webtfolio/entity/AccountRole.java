@@ -10,6 +10,9 @@ public class AccountRole {
 	private Date regDate;
 	private boolean defaultRole;
 	
+	private Account account;
+	private Role role;
+	
 	public AccountRole() {
 		// TODO Auto-generated constructor stub
 	}
@@ -69,6 +72,22 @@ public class AccountRole {
 
 	public void setDefaultRole(boolean defaultRole) {
 		this.defaultRole = defaultRole;
+	}
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
 	}
 	
 }

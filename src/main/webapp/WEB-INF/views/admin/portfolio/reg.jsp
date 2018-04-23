@@ -10,9 +10,18 @@
 				<section class="portfolio-detail portfolio-detail-info">
 					<h1>포트폴리오 등록</h1>
 					<div>
-						<span>2016.03.27</span>
-						<span> ~ </span>
-						<span>2017.10.25</span>
+						<label for="title">제목:</label>
+						<input id="title" type="text" name="title"/>
+						<label for="category">카테고리:</label>
+						<select id="category">
+							<option>ALL</option>
+							<option>SI 프로젝트</option>
+							<option>어플리케이션</option>
+						</select>
+						<input type="date" name="startDate"/>
+						
+						<input type="date" name="endDate"/>
+						
 						<div>
 							<div>
 								<span>아사아블로이코리아(주)유니락</span>

@@ -15,6 +15,10 @@ public class Profile {
 	private String email;
 	private Date regDate;
 	
+	private Account account;
+	private LanguageCert languageCert;
+	private Certificate certificate;
+	
 	public Profile() {
 		// TODO Auto-generated constructor stub
 	}
@@ -126,6 +130,30 @@ public class Profile {
 
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
+	}
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	public LanguageCert getLanguageCert() {
+		return languageCert;
+	}
+
+	public void setLanguageCert(LanguageCert languageCert) {
+		this.languageCert = languageCert;
+	}
+
+	public Certificate getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(Certificate certificate) {
+		this.certificate = certificate;
 	}
 
 }

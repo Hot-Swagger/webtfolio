@@ -5,6 +5,8 @@ public class Role {
 	private String roleId;
 	private String description;
 	
+	private AccountRole accountRole;
+	
 	public Role() {
 		// TODO Auto-generated constructor stub
 	}
@@ -29,6 +31,14 @@ public class Role {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public AccountRole getAccountRole() {
+		return accountRole;
+	}
+
+	public void setAccountRole(AccountRole accountRole) {
+		this.accountRole = accountRole;
 	}
 	
 }

@@ -6,6 +6,9 @@ public class PortfolioSkill {
 	private String skillId;
 	private int portfolioId;
 	
+	private Portfolio portfolio;
+	private Skill skill;
+	
 	public PortfolioSkill() {
 		// TODO Auto-generated constructor stub
 	}
@@ -45,6 +48,22 @@ public class PortfolioSkill {
 
 	public void setPortfolioId(int portfolioId) {
 		this.portfolioId = portfolioId;
+	}
+
+	public Portfolio getPortfolio() {
+		return portfolio;
+	}
+
+	public void setPortfolio(Portfolio portfolio) {
+		this.portfolio = portfolio;
+	}
+
+	public Skill getSkill() {
+		return skill;
+	}
+
+	public void setSkill(Skill skill) {
+		this.skill = skill;
 	}
 	
 }

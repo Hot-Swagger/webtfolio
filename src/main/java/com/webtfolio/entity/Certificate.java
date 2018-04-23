@@ -12,6 +12,8 @@ public class Certificate {
 	private Date pubDate;
 	private int profileId;
 	
+	private Profile profile;
+	
 	public Certificate() {
 		// TODO Auto-generated constructor stub
 	}
@@ -92,6 +94,14 @@ public class Certificate {
 
 	public void setProfileId(int profileId) {
 		this.profileId = profileId;
+	}
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
 	}
 	
 }
