@@ -7,7 +7,7 @@ public class Profile {
 	private String accountId;
 	private String name;
 	private String gender;
-	private Date birthDay;
+	private Date birthday;
 	private String address;
 	private String school;
 	private String major;
@@ -23,13 +23,13 @@ public class Profile {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Profile(String accountId, String name, String gender, Date birthDay, String address, String school,
+	public Profile(String accountId, String name, String gender, Date birthday, String address, String school,
 			String major, String phone, String email) {
 		super();
 		this.accountId = accountId;
 		this.name = name;
 		this.gender = gender;
-		this.birthDay = birthDay;
+		this.birthday = birthday;
 		this.address = address;
 		this.school = school;
 		this.major = major;
@@ -37,13 +37,13 @@ public class Profile {
 		this.email = email;
 	}
 
-	public Profile(String accountId, String name, String gender, Date birthDay, String address, String school,
+	public Profile(String accountId, String name, String gender, Date birthday, String address, String school,
 			String major, String phone, String email, Date regDate) {
 		super();
 		this.accountId = accountId;
 		this.name = name;
 		this.gender = gender;
-		this.birthDay = birthDay;
+		this.birthday = birthday;
 		this.address = address;
 		this.school = school;
 		this.major = major;
@@ -76,12 +76,12 @@ public class Profile {
 		this.gender = gender;
 	}
 
-	public Date getBirthDay() {
-		return birthDay;
+	public Date getBirthday() {
+		return birthday;
 	}
 
-	public void setBirthDay(Date birthDay) {
-		this.birthDay = birthDay;
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getAddress() {

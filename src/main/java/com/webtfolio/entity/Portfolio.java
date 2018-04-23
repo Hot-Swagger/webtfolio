@@ -3,71 +3,145 @@ package com.webtfolio.entity;
 import java.util.Date;
 
 public class Portfolio {
-	private long id;
+
+	private int id;
 	private String title;
-	private String content;
-	private String writerId;
+	private String category;
+	private String devPeriod;
+	private int persons;
+	private String role;
+	private String detail;
 	private Date regDate;
-	private int hit;
-	private int order;
-	private long chapterId;
+	private String accountId;
+	
+	private Account account;
+	private PortfolioSkill portfolioSkill;
+	private Image image;
 	
 	public Portfolio() {
-		
+		// TODO Auto-generated constructor stub
 	}
-	
-	public Portfolio(String title, String content, String writerId) {
+
+	public Portfolio(String title, String category, String devPeriod, int persons, String role, String detail,
+			String accountId) {
+		super();
 		this.title = title;
-		this.content = content;
-		this.writerId = writerId;
+		this.category = category;
+		this.devPeriod = devPeriod;
+		this.persons = persons;
+		this.role = role;
+		this.detail = detail;
+		this.accountId = accountId;
 	}
-	
-	public long getId() {
+
+	public Portfolio(int id, String title, String category, String devPeriod, int persons, String role, String detail,
+			Date regDate, String accountId) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.category = category;
+		this.devPeriod = devPeriod;
+		this.persons = persons;
+		this.role = role;
+		this.detail = detail;
+		this.regDate = regDate;
+		this.accountId = accountId;
+	}
+
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+
+	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getTitle() {
 		return title;
 	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getContent() {
-		return content;
+
+	public String getCategory() {
+		return category;
 	}
-	public void setContent(String content) {
-		this.content = content;
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
-	public String getWriterId() {
-		return writerId;
+
+	public String getDevPeriod() {
+		return devPeriod;
 	}
-	public void setWriterId(String writerId) {
-		this.writerId = writerId;
+
+	public void setDevPeriod(String devPeriod) {
+		this.devPeriod = devPeriod;
 	}
+
+	public int getPersons() {
+		return persons;
+	}
+
+	public void setPersons(int persons) {
+		this.persons = persons;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
 	public Date getRegDate() {
 		return regDate;
 	}
+
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
-	public int getHit() {
-		return hit;
+
+	public String getAccountId() {
+		return accountId;
 	}
-	public void setHit(int hit) {
-		this.hit = hit;
+
+	public void setAccountId(String accountId) {
+		this.accountId = accountId;
 	}
-	public int getOrder() {
-		return order;
+
+	public Account getAccount() {
+		return account;
 	}
-	public void setOrder(int order) {
-		this.order = order;
+
+	public void setAccount(Account account) {
+		this.account = account;
 	}
-	public long getChapterId() {
-		return chapterId;
+
+	public PortfolioSkill getPortfolioSkill() {
+		return portfolioSkill;
 	}
-	public void setChapterId(long chapterId) {
-		this.chapterId = chapterId;
+
+	public void setPortfolioSkill(PortfolioSkill portfolioSkill) {
+		this.portfolioSkill = portfolioSkill;
 	}
+
+	public Image getImage() {
+		return image;
+	}
+
+	public void setImage(Image image) {
+		this.image = image;
+	}
+	
 }

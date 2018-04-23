@@ -6,25 +6,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.webtfolio.dao.PortfolioDao2;
-import com.webtfolio.entity.Portfolio2;
+import com.webtfolio.dao.PortfolioDao;
+import com.webtfolio.entity.Portfolio;
 
 @Service("adminPortfolioService")
 public class PortfolioService {
 	/*관리자 포트폴리오 페이지 insert, update, delete 서비스 구현*/
 	@Autowired
-	private PortfolioDao2 portfolioDao2;
+	private PortfolioDao portfolioDao;
 
 	@Transactional
-	public List<Portfolio2> getPortfolioList(String id, Integer page) {
+	public List<Portfolio> getPortfolioList(String id, Integer page) {
 
-		List<Portfolio2> result = portfolioDao2.getList(id, page);
+		List<Portfolio> result = portfolioDao.getList(id, page);
 		return result;
 	}
 
 	@Transactional
-	public Portfolio2 getPortfolio(Integer id) {
-		Portfolio2 result = portfolioDao2.get(id);
+	public Portfolio getPortfolio(Integer id) {
+		Portfolio result = portfolioDao.get(id);
 		return result;
 	}
 }

@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.webtfolio.dao.AccountRoleDao;
-import com.webtfolio.dao.PortfolioDao;
 import com.webtfolio.entity.AccountRole;
-import com.webtfolio.entity.Portfolio;
 
 @Repository
 public class MyBatisAccountRoleDao implements AccountRoleDao {
