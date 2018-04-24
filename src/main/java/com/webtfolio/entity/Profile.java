@@ -1,6 +1,7 @@
 package com.webtfolio.entity;
 
 import java.util.Date;
+import java.util.List;
 
 public class Profile {
 
@@ -16,8 +17,8 @@ public class Profile {
 	private Date regDate;
 	
 	private Account account;
-	private LanguageCert languageCert;
-	private Certificate certificate;
+	private List<LanguageCert> languageCerts;
+	private List<Certificate> certificates;
 	
 	public Profile() {
 		// TODO Auto-generated constructor stub
@@ -140,20 +141,20 @@ public class Profile {
 		this.account = account;
 	}
 
-	public LanguageCert getLanguageCert() {
-		return languageCert;
+	public List<LanguageCert> getLanguageCerts() {
+		return languageCerts;
 	}
 
-	public void setLanguageCert(LanguageCert languageCert) {
-		this.languageCert = languageCert;
+	public void setLanguageCerts(List<LanguageCert> languageCerts) {
+		this.languageCerts = languageCerts;
 	}
 
-	public Certificate getCertificate() {
-		return certificate;
+	public List<Certificate> getCertificates() {
+		return certificates;
 	}
 
-	public void setCertificate(Certificate certificate) {
-		this.certificate = certificate;
+	public void setCertificates(List<Certificate> certificates) {
+		this.certificates = certificates;
 	}
 
 }

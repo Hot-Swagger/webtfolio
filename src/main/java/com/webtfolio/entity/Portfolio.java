@@ -1,6 +1,7 @@
 package com.webtfolio.entity;
 
 import java.util.Date;
+import java.util.List;
 
 public class Portfolio {
 
@@ -13,10 +14,6 @@ public class Portfolio {
 	private String detail;
 	private Date regDate;
 	private String accountId;
-	
-	private Account account;
-	private PortfolioSkill portfolioSkill;
-	private Image image;
 	
 	public Portfolio() {
 		// TODO Auto-generated constructor stub
@@ -118,30 +115,6 @@ public class Portfolio {
 
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
-	}
-
-	public Account getAccount() {
-		return account;
-	}
-
-	public void setAccount(Account account) {
-		this.account = account;
-	}
-
-	public PortfolioSkill getPortfolioSkill() {
-		return portfolioSkill;
-	}
-
-	public void setPortfolioSkill(PortfolioSkill portfolioSkill) {
-		this.portfolioSkill = portfolioSkill;
-	}
-
-	public Image getImage() {
-		return image;
-	}
-
-	public void setImage(Image image) {
-		this.image = image;
 	}
 	
 }
