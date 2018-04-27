@@ -6,7 +6,7 @@
 	<div class="profile-main-container">
 		<div class="profile-detail-visual">
 			<p class="hidden">프로필 페이지</p>
-			<section class="portfolio-detail portfolio-detail-info">
+			<section class="profile-detail profile-detail-info">
 				<h1>PROFILE</h1>
 				<div>
 					<span>이름: </span>

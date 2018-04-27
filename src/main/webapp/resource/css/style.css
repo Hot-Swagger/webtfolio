@@ -302,17 +302,22 @@ a:active{
 		padding: 40px 20px 25px 20px;
 	}
 	.portfolio-frame{
-		width: 360px;
-		height: 250px;
+		width: 100%;
+		height: auto;
+		margin-top: 15px;
+		/* width: 360px;
+		height: 250px; */
 		position: relative;
 	}
 		.portfolio-frame>img{
-			position: absolute;
+			position: relative;
+			width: calc(100% - 10px);
+			/* position: absolute; */
 			top: 0;
 			left: 0;
-			margin: 15px 5px 5px 5px;
+			/* margin: 15px 5px 5px 5px;
 			width: 340px;
-			height: 220px;
+			height: 220px; */
 			border: 5px solid rgba(50,50,50,.8);
 		}
 		.portfolio-frame>img:hover+div,
@@ -328,9 +333,10 @@ a:active{
 			position: absolute;
 			top: 0;
 			left: 0;
-			margin: 15px 5px 5px 5px;
+			width: 100%;
+			/* margin: 15px 5px 5px 5px;
 			width: 350px;
-			height: 230px;
+			height: 230px; */
 			background: rgba(76,169,180,.8);
 			z-index: 10;
 			transform: scaleY(0);
@@ -425,6 +431,7 @@ a:active{
 		word-break: keep-all;
 		z-index: 2;
 	}
+	
 .portfolio-img-slider{
 	margin-top: 50px;
 	width: 360px;
@@ -438,6 +445,13 @@ a:active{
 
 .portfolio-detail{
 	padding: 15px 10px;
+	margin: 0;
+	font-size: 16px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 26px;
+	word-break: keep-all;
+	z-index: 2;
 }
 	.portfolio-detail h1{
 		font-size: 20px;
@@ -448,7 +462,7 @@ a:active{
 .portfolio-detail-info{
 	
 }
-..portfolio-detail-description{
+.portfolio-detail-description{
 	
 }
 
@@ -482,7 +496,7 @@ a:active{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	opacity: .5;
+	opacity: .7;
 	z-index: 1;
 }
 	.profile-detail-visual p{
@@ -494,6 +508,21 @@ a:active{
 		line-height: 42px;
 		word-break: keep-all;
 		z-index: 2;
+	}
+.profile-detail{
+	padding: 15px 10px;
+	margin: 0;
+	font-size: 16px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 26px;
+	word-break: keep-all;
+	z-index: 2;
+}
+	.profile-detail h1{
+		font-size: 20px;
+		font-weight: bold;
+		color: #4ca9b4;
 	}
 
 /* --- experience main ------------------------------------------------------------ */
@@ -527,7 +556,7 @@ a:active{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	opacity: .5;
+	opacity: .3;
 	z-index: 1;
 }
 	.experience-detail-visual p{
@@ -540,7 +569,21 @@ a:active{
 		word-break: keep-all;
 		z-index: 2;
 	}
-	
+.experience-detail{
+	padding: 15px 10px;
+	margin: 0;
+	font-size: 16px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 26px;
+	word-break: keep-all;
+	z-index: 2;
+}
+	.experience-detail h1{
+		font-size: 20px;
+		font-weight: bold;
+		color: #4ca9b4;
+	}
 /* --- login main ------------------------------------------------------------ */
 .login-main{
    padding-top: 91px;

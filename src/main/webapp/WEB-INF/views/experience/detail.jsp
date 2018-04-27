@@ -6,7 +6,7 @@
 	<div class="experience-main-container">
 		<div class="experience-detail-visual">
 			<p class="hidden">경력사항 페이지</p>
-			<section class="portfolio-detail portfolio-detail-info">
+			<section class="experience-detail experience-detail-info">
 				<h1>경력사항</h1>
 				<div>
 					<span>2016.03.27</span>

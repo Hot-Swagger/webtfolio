@@ -20,7 +20,7 @@
 			<li id="admin-menu">
 				<span>ADMIN MENU</span>
 				<span>
-					<img src="${root}/resource/images/ic_keyboard_arrow_down_white_24dp_1x.png">
+					<img src="${root}/resource/images/ic_keyboard_arrow_down_white_24dp_1x.png" id="admin-menu-img">
 				</span>
 			</li>
 			<li class="admin-sub-menu">

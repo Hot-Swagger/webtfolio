@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     $('#accesspanel').on('submit', function(e) {
 
-        e.preventDefault();
+        /* e.preventDefault(); */
 
         state = !state;
 
