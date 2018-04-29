@@ -19,9 +19,7 @@
 			<li><a href="${root}/portfolio/list">PORTFOLIO</a></li>
 			<li id="admin-menu">
 				<span>ADMIN MENU</span>
-				<span>
-					<img src="${root}/resource/images/ic_keyboard_arrow_down_white_24dp_1x.png" id="admin-menu-img">
-				</span>
+				<img src="${root}/resource/images/ic_keyboard_arrow_down_white_24dp_1x.png" id="admin-menu-img">
 			</li>
 			<li class="admin-sub-menu">
 				<ul>

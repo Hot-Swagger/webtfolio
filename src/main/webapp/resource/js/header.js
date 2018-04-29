@@ -1,5 +1,9 @@
 
 $(function(){
+	var main = $(".main");
+	var profileMain = $(".profile-detail");
+	var experienceMain = $(".experience-detail");
+	var footer = $(".footer");
 	var menuButton = $(".header-menu li:last-child");
 	var adminButton = $("#admin-menu");
 	var mainMenu = $(".main-menu");
@@ -8,7 +12,18 @@ $(function(){
 	var portFrame = $(".portfolio-frame");
 	var portRoll = $(".portfolio-rollover");
 	
+	main.css("min-height","calc(100% - 51px - "+footer.outerHeight()+"px)");
+	profileMain.css("min-height",main.outerHeight());
+	experienceMain.css("min-height",main.outerHeight());
 	portRoll.css("height",portFrame.outerHeight() + "px");
+	
+	$(window).resize(function(){
+		main.css("min-height","calc(100% - 51px - "+footer.outerHeight()+"px)");
+		profileMain.css("min-height",main.outerHeight());
+		experienceMain.css("min-height",main.outerHeight());
+		portRoll.css("height",portFrame.outerHeight() + "px");
+	});
+	
 	menuButton.click(function(){
 		if(!mainMenu.hasClass("show"))
 			mainMenu.addClass("show");
@@ -27,4 +42,5 @@ $(function(){
 			img.src = img.src.replace("up","down");
 		}
 	});
+	
 });

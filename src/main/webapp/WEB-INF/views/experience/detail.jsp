@@ -3,28 +3,74 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="root" value="${pageContext.request.contextPath}"/>
 <main class="main">
-	<div class="experience-main-container">
-		<div class="experience-detail-visual">
-			<p class="hidden">경력사항 페이지</p>
-			<section class="experience-detail experience-detail-info">
-				<h1>경력사항</h1>
-				<div>
-					<span>2016.03.27</span>
-					<span> ~ </span>
-					<span>2017.10.25</span>
-					<div>
-						<div>
-							<span>아사아블로이코리아(주)유니락</span>
-							<span>웹개발자</span>
-						</div>
-						<div>
-							<span>ERP 개발</span>
-							<span>ERP 개발</span>
-							<span>ERP 개발</span>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-	</div>
+	<p class="hidden">경력사항 페이지</p>
+	<section class="experience-detail">
+		<h1>Experience</h1>
+		<table>
+			<tr>
+				<td>입사일</td>
+				<td>~</td>
+				<td>퇴사일</td>
+				<td>회사</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					<span>웹 개발자</span>
+					<span> / </span>
+					<span>대리</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					상세업무
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>입사일</td>
+				<td>~</td>
+				<td>퇴사일</td>
+				<td>회사</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					<span>웹 개발자</span>
+					<span> / </span>
+					<span>대리</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					상세업무
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>입사일</td>
+				<td>~</td>
+				<td>퇴사일</td>
+				<td>회사</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					<span>웹 개발자</span>
+					<span> / </span>
+					<span>대리</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td>
+					상세업무
+				</td>
+			</tr>
+		</table>
+	</section>
 </main>

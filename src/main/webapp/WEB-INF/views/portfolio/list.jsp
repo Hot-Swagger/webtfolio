@@ -29,11 +29,13 @@
 	</section>
 	<section class="index-portfolio">
 		<h1 class="hidden">PORTFOLIO list</h1>
-		<div class="portfolio-category">
-			<button class="btn-lg btn-bright">ALL</button>
-			<button class="btn-lg btn-bright">SI 프로젝트</button>
-			<button class="btn-lg btn-bright">어플리케이션</button>
-		</div>
+		<nav class="portfolio-category">
+			<ul>
+				<li class="btn-lg btn-bright">ALL</li>
+				<li class="btn-lg btn-bright">SI 프로젝트</li>
+				<li class="btn-lg btn-bright">어플리케이션</li>
+			</ul>
+		</nav>
 		<article class="portfolio-frame">
 			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
 			<div class="portfolio-rollover">

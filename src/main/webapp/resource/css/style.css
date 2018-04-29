@@ -54,6 +54,8 @@ a:active{
 }
 .btn-lg{
 	font-size: 14px;
+	line-height: 24px;
+	vertical-align: middle;
 	padding: 10px 10px;
 	width: 105px;
 	height: 60px;
@@ -61,7 +63,8 @@ a:active{
 	text-align: center;
 	overflow: hidden;
 }
-.btn:hover{
+.btn-md:hover,
+.btn-lg:hover{
 	cursor: pointer;
 }
 .btn-dark{
@@ -78,7 +81,6 @@ a:active{
 	color: #a1a1a1;
 	background: #fff;
     border: 2px solid #b9b9b9;
-    border-radius: 5px;
 }
 .btn-bright:hover{
 	color: #fff;
@@ -182,12 +184,12 @@ a:active{
 				justify-content: space-between;
 				align-items: center;
 				border-bottom: 1px solid #7f7f7f;
+				background: #181819;
 			}
 				.main-menu>ul>li>a{
 					padding: 10px 20px;
 					font-size: 14px;
 					color: #fff;
-					background: #181819;
 					width: 100%;
 				}
 			#admin-menu{
@@ -197,6 +199,7 @@ a:active{
 				background: #181819;
 			}
 			#admin-menu:hover{
+				background: #4ca9b4;
 				cursor: pointer;
 			}
 				#admin-menu span{
@@ -212,24 +215,26 @@ a:active{
 					width: 100%;
 					max-height: 84px;
 					transition: 0.2s;
+					background: #181819;
 				}
-					.admin-sub-menu li,
 					.admin-sub-menu li a{
-						width: 100%;
+						display: block;
+						width: calc(100% - 40px);
 						padding: 10px 20px;
 						font-size: 14px;
 						color: #fff;
-						background: #181819;
 						border-bottom: 1px solid #7f7f7f;
 					}
-			.main-menu ul li:hover{
+			.main-menu ul li a:hover{
 				background: #4ca9b4;
-				color: #fff;
+				cursor: pointer;
 			}
 				
 /* --- .main ------------------------------------------------------------ */
 .main{
-   padding-top: 51px;
+	position: relative;
+	top: 51px;
+	width: 100%;
 }
 
    .main .note-list{
@@ -323,7 +328,8 @@ a:active{
 		.portfolio-frame>img:hover+div,
 		.portfolio-rollover:hover{
 			transform: scaleY(1);
-			transition: 0.3s
+			transition: 0.3s;
+			cursor: pointer;
 		}
 		.portfolio-rollover{
 			display: flex;
@@ -377,15 +383,29 @@ a:active{
     color: #fff;
 	background: #4ca9b4;
     border: 2px solid #4ca9b4;
+    cursor: pointer;
 }
 /* --- portfolio main ------------------------------------------------------------ */
-
 .portfolio-category{
-	padding: 5px;
+	padding: 5px 5px 20px 5px;
+}
+.portfolio-category ul{
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 }
+	.portfolio-category ul li{
+		box-sizing: border-box;
+		display: flex;
+		width: 32%;
+		justify-content: center;
+		align-items: center;
+		margin-right: 1%;
+	}
+	.portfolio-category ul li:first-child{
+		margin-left: 1%;
+	}
+
 
 /* --- portfolio-detail main ------------------------------------------------------------ */
 .detail-main-container{
@@ -467,123 +487,53 @@ a:active{
 }
 
 /* --- profile main ------------------------------------------------------------ */
-.profile-main-container{
-	background: #121213;
-	color: #fff;
-}
 
-.profile-detail-visual{
-	position: relative;
-	width: 360px;
-	height: 442px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.profile-detail-visual:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 360px;
-	height: 442px;
-	background-image: url("../images/wood-img.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	opacity: .7;
-	z-index: 1;
-}
-	.profile-detail-visual p{
-		margin: 0;
-		font-size: 36px;
-		color: #fff;
-		font-weight: bold;
-		text-align: center;
-		line-height: 42px;
-		word-break: keep-all;
-		z-index: 2;
-	}
 .profile-detail{
-	padding: 15px 10px;
-	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: inherit;
+	padding: 40px 20px 20px 20px;
 	font-size: 16px;
+	line-height: 26px;
 	color: #fff;
 	font-weight: normal;
-	line-height: 26px;
 	word-break: keep-all;
-	z-index: 2;
+	background-image: url("../images/wood-img.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
 }
 	.profile-detail h1{
 		font-size: 20px;
+		line-height: 30px;
 		font-weight: bold;
 		color: #4ca9b4;
 	}
 
 /* --- experience main ------------------------------------------------------------ */
-.experience-main-container{
-	background: #121213;
-	color: #fff;
-}
 
-.experience-detail-visual{
-	position: relative;
-	width: 360px;
-	height: 442px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.experience-detail-visual:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 360px;
-	height: 442px;
-	background-image: url("../images/book-ring-img.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	opacity: .3;
-	z-index: 1;
-}
-	.experience-detail-visual p{
-		margin: 0;
-		font-size: 36px;
-		color: #fff;
-		font-weight: bold;
-		text-align: center;
-		line-height: 42px;
-		word-break: keep-all;
-		z-index: 2;
-	}
 .experience-detail{
-	padding: 15px 10px;
-	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: inherit;
+	padding: 40px 20px 20px 20px;
 	font-size: 16px;
+	line-height: 26px;
 	color: #fff;
 	font-weight: normal;
-	line-height: 26px;
 	word-break: keep-all;
-	z-index: 2;
+	background-image: url("../images/aurora-img.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
 }
 	.experience-detail h1{
 		font-size: 20px;
+		line-height: 30px;
 		font-weight: bold;
 		color: #4ca9b4;
 	}
+	
 /* --- login main ------------------------------------------------------------ */
 .login-main{
    padding-top: 91px;
@@ -592,6 +542,8 @@ a:active{
 	
 /* --- .footer ------------------------------------------------------------ */
 .footer{
+	position: relative;
+	top: 51px;
 	padding: 40px 20px;
 	color: #eaeaea;
     font-size: 12px;
@@ -599,4 +551,5 @@ a:active{
     text-align: center;
     background: #181819;
     border-top: 1px solid #7f7f7f;
+    word-break: keep-all;
 }
