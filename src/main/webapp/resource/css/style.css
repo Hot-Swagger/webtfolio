@@ -416,8 +416,8 @@ a:active{
 
 .portfolio-detail-visual{
 	position: relative;
-	width: 360px;
-	height: 200px;
+	width: 100%;
+	min-height: 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -429,10 +429,11 @@ a:active{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 360px;
-	height: 200px;
+	width: 100%;
+	min-height: 200px;
 	background-image: url("../images/portfolio-detail-visual.jpg");
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -454,16 +455,16 @@ a:active{
 	
 .portfolio-img-slider{
 	margin-top: 50px;
-	width: 360px;
-	height: 250px;
+	width: 100%;
+	height: auto;
 }
 	.portfolio-img-slider>img{
-		margin: 10px;
-		width: 340px;
-		height: 220px;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
 	}
-
 .portfolio-detail{
+	box-sizing: border-box;
 	padding: 15px 10px;
 	margin: 0;
 	font-size: 16px;

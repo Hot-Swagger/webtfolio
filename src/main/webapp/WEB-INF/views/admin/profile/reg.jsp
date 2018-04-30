@@ -3,30 +3,82 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="root" value="${pageContext.request.contextPath}"/>
 <main class="main">
-	<div class="profile-main-container">
-		<div class="profile-detail-visual">
-			<p>프로필 등록 페이지</p>
-			<form>
-				<section class="portfolio-detail portfolio-detail-info">
-					<h1>경력사항</h1>
-					<div>
-						<span>2016.03.27</span>
-						<span> ~ </span>
-						<span>2017.10.25</span>
-						<div>
-							<div>
-								<span>아사아블로이코리아(주)유니락</span>
-								<span>웹개발자</span>
-							</div>
-							<div>
-								<span>ERP 개발</span>
-								<span>ERP 개발</span>
-								<span>ERP 개발</span>
-							</div>
-						</div>
-					</div>
-				</section>
-			</form>
-		</div>
-	</div>
+	<h1 class="hidden">프로필 등록 페이지</h1>
+	<form>
+		<section class="profile-detail">
+			<h1>Edit Profile</h1>
+			<table>
+				<tr>
+					<td>
+						<label for="name">성명: </label>
+					</td>
+					<td>
+						<input id="name" name="name" type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="gender">성별: </label>
+					</td>
+					<td>
+						<select id="gender" name="gender">
+							<option>남성</option>
+							<option>여성</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="birthday">생년월일: </label>
+					</td>
+					<td>
+						<input id="birthday" name="birthday" type="date"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="address">주소: </label>
+					</td>
+					<td>
+						<input id="address" name="address" type="text"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="phone">연락처: </label>
+					</td>
+					<td>
+						<input id="phone" name="phone" type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email">E-mail: </label>
+					</td>
+					<td>
+						<input id="email" name="email" type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="school">학교: </label>
+					</td>
+					<td>
+						<input id="school" name="school" type="text"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="major">전공: </label>
+					</td>
+					<td>
+						<input id="major" name="major" type="text"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+				</tr>
+			</table>
+		</section>
+	</form>
 </main>
