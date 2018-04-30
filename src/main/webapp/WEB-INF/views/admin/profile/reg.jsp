@@ -79,6 +79,22 @@
 					<td>
 				</tr>
 			</table>
+			<div class="formCertificate">
+				<table class="certificate-container">
+					<span><input id="cert-name" name="cert-name" type="text" placeholder="자격증 명"/></span>
+					<span><input id="cert-no" name="cert-no" type="text" placeholder="자격증 번호"/></span>
+					<span><input id="cert-level" name="cert-level" type="text" placeholder="수준"/></span>
+					<span><input id="cert-publisher" name="cert-publisher" type="text" placeholder="발행처"/></span>
+					<span><input id="cert-pubDate" name="cert-pubDate" type="date"/></span>
+				</table>
+				<button>자격증 추가</button>
+			</div>
+			<div class="formLanguageCert">
+				<div class="languageCert-container">
+				
+				</div>
+				<button>어학 추가</button>
+			</div>
 		</section>
 	</form>
 </main>
