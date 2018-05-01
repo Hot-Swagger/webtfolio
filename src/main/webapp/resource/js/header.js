@@ -2,26 +2,23 @@
 $(function(){
 	var main = $(".main");
 	var profileMain = $(".profile-detail");
-	var experienceMain = $(".experience-detail");
 	var footer = $(".footer");
 	var menuButton = $(".header-menu li:last-child");
 	var adminButton = $("#admin-menu");
 	var mainMenu = $(".main-menu");
 	var adminMenuList = $(".admin-sub-menu");
 	var adminMenuImg = $("#admin-menu-img");
-	var portFrame = $(".portfolio-frame");
+	var portFrameImg = $(".portfolio-frame > img");
 	var portRoll = $(".portfolio-rollover");
 	
-	main.css("min-height","calc(100% - 51px - "+footer.outerHeight()+"px)");
+	main.css("min-height","calc(100% - 50px - "+footer.outerHeight()+"px)");
 	profileMain.css("min-height",main.outerHeight());
-	experienceMain.css("min-height",main.outerHeight());
-	portRoll.css("height",portFrame.outerHeight() + "px");
+	portRoll.css("height",portFrameImg.outerHeight() + "px");
 	
 	$(window).resize(function(){
-		main.css("min-height","calc(100% - 51px - "+footer.outerHeight()+"px)");
+		main.css("min-height","calc(100% - 50px - "+footer.outerHeight()+"px)");
 		profileMain.css("min-height",main.outerHeight());
-		experienceMain.css("min-height",main.outerHeight());
-		portRoll.css("height",portFrame.outerHeight() + "px");
+		portRoll.css("height",portFrameImg.outerHeight() + "px");
 	});
 	
 	menuButton.click(function(){

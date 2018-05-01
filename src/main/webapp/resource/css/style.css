@@ -35,6 +35,11 @@ a:active{
 	color: #000;
 	text-decoration: none;
 }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /* ------------------------ my style cascade ---------------------------- */
 
@@ -98,13 +103,13 @@ a:active{
 	flex-direction: column;
 	justify-content: flex-start;
 	background: #181819;
-	border-bottom: 1px solid #7f7f7f;
 	z-index: 100;
 }
 	/* --- .header-menu -------------------------------------------------- */
 	.header-menu{
 		position: relative;
 		background: #181819;
+		border-bottom: 1px solid #7f7f7f;
 		z-index: 100;
 	}
 		.header-menu ul{
@@ -161,7 +166,6 @@ a:active{
 	/* --- .main-menu -------------------------------------------------- */
 	.main-menu{
 		width: 100%;
-		margin-top: 1px;
 		position: relative;
 		top: 0;
 		left: 0;
@@ -219,7 +223,7 @@ a:active{
 				}
 					.admin-sub-menu li a{
 						display: block;
-						width: calc(100% - 40px);
+						width: 100%;
 						padding: 10px 20px;
 						font-size: 14px;
 						color: #fff;
@@ -316,7 +320,7 @@ a:active{
 	}
 		.portfolio-frame>img{
 			position: relative;
-			width: calc(100% - 10px);
+			width: 100%;
 			/* position: absolute; */
 			top: 0;
 			left: 0;
@@ -511,29 +515,6 @@ a:active{
 		color: #4ca9b4;
 	}
 
-/* --- experience main ------------------------------------------------------------ */
-
-.experience-detail{
-	box-sizing: border-box;
-	width: 100%;
-	min-height: inherit;
-	padding: 40px 20px 20px 20px;
-	font-size: 16px;
-	line-height: 26px;
-	color: #fff;
-	font-weight: normal;
-	word-break: keep-all;
-	background-image: url("../images/aurora-img.jpg");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
-}
-	.experience-detail h1{
-		font-size: 20px;
-		line-height: 30px;
-		font-weight: bold;
-		color: #4ca9b4;
-	}
 	
 /* --- login main ------------------------------------------------------------ */
 .login-main{

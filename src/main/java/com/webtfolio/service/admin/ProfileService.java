@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import com.webtfolio.dao.CertificateDao;
 import com.webtfolio.dao.ExperienceDao;
-import com.webtfolio.dao.LanguageCertDao;
 import com.webtfolio.dao.ProfileDao;
 
 @Service("adminProfileService")
@@ -15,8 +14,6 @@ public class ProfileService {
 	private CertificateDao certificateDao;
 	@Autowired
 	private ExperienceDao experienceDao;
-	@Autowired
-	private LanguageCertDao languageCertDao;
 	@Autowired
 	private ProfileDao	profileDao;
 	

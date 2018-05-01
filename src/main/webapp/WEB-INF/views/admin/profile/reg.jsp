@@ -89,12 +89,6 @@
 				</table>
 				<button>자격증 추가</button>
 			</div>
-			<div class="formLanguageCert">
-				<div class="languageCert-container">
-				
-				</div>
-				<button>어학 추가</button>
-			</div>
 		</section>
 	</form>
 </main>

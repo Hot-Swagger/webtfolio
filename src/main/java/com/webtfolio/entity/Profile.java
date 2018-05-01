@@ -17,7 +17,6 @@ public class Profile {
 	private Date regDate;
 	
 	private Account account;
-	private List<LanguageCert> languageCerts;
 	private List<Certificate> certificates;
 	
 	public Profile() {
@@ -139,14 +138,6 @@ public class Profile {
 
 	public void setAccount(Account account) {
 		this.account = account;
-	}
-
-	public List<LanguageCert> getLanguageCerts() {
-		return languageCerts;
-	}
-
-	public void setLanguageCerts(List<LanguageCert> languageCerts) {
-		this.languageCerts = languageCerts;
 	}
 
 	public List<Certificate> getCertificates() {

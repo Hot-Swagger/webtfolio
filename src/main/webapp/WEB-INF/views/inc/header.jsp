@@ -14,8 +14,7 @@
 	<nav class="main-menu">
 		<h1 class="hidden">메인메뉴</h1>
 		<ul>
-			<li><a href="${root}/profile/detail">PROFILE</a></li>
-			<li><a href="${root}/experience/detail">EXPERIENCE</a></li>
+			<li><a href="${root}/profile/detail">PROFILE / EXPERIENCE</a></li>
 			<li><a href="${root}/portfolio/list">PORTFOLIO</a></li>
 			<li id="admin-menu">
 				<span>ADMIN MENU</span>
