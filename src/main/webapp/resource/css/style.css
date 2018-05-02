@@ -49,7 +49,7 @@ a:active{
 
 .background-highlight,
 .background-highlight:hover{
-	background: #4ca9b4;
+	background: #42A8C0;
 	color: #fff;
 }
 .btn-md{
@@ -89,8 +89,8 @@ a:active{
 }
 .btn-bright:hover{
 	color: #fff;
-	background: #4ca9b4;
-    border: 2px solid #4ca9b4;
+	background: #42A8C0;;
+    border: 2px solid #42A8C0;;
 }
 
 /* --- .header ------------------------------------------------------------ */
@@ -203,7 +203,7 @@ a:active{
 				background: #181819;
 			}
 			#admin-menu:hover{
-				background: #4ca9b4;
+				background: #42A8C0;
 				cursor: pointer;
 			}
 				#admin-menu span{
@@ -230,7 +230,7 @@ a:active{
 						border-bottom: 1px solid #7f7f7f;
 					}
 			.main-menu ul li a:hover{
-				background: #4ca9b4;
+				background: #42A8C0;
 				cursor: pointer;
 			}
 				
@@ -385,8 +385,8 @@ a:active{
 }
 #index-load-portfolio:hover{
     color: #fff;
-	background: #4ca9b4;
-    border: 2px solid #4ca9b4;
+	background: #42A8C0;
+    border: 2px solid #42A8C0;
     cursor: pointer;
 }
 /* --- portfolio main ------------------------------------------------------------ */
@@ -481,7 +481,7 @@ a:active{
 	.portfolio-detail h1{
 		font-size: 20px;
 		font-weight: bold;
-		color: #4ca9b4;
+		color: #42A8C0;
 		
 	}
 .portfolio-detail-info{
@@ -512,7 +512,7 @@ a:active{
 		font-size: 20px;
 		line-height: 30px;
 		font-weight: bold;
-		color: #4ca9b4;
+		color: #42A8C0;
 	}
 
 	
