@@ -4,7 +4,7 @@
 <c:set var="root" value="${pageContext.request.contextPath}"/>
 <link href="${root}/resource/css/Login.css" type ="text/css" rel ="stylesheet"/>
 
-<main>
+<main class="main">
 	<div class="background-wrap">
 		<div class="background"></div>
 	</div>

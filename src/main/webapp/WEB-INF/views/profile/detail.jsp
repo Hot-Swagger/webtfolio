@@ -7,7 +7,7 @@
 	<div class="wrapper">
         <div class="sidebar-wrapper">
             <div class="profile-container">
-                <img class="profile" src="${root}/resource/assets/images/profile.jpg" alt="" />
+                <img class="profile" src="${root}/resource/assets/images/profile.png" alt="" />
                 <h1 class="name">김대신</h1>
                 <h3 class="tagline">Full Stack Developer</h3>
             </div><!--//profile-container-->

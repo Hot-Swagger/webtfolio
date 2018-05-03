@@ -3,7 +3,7 @@
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-	<definition name="admin.*.*" template="/WEB-INF/views/inc/layout.jsp">    
+	<definition name="admin.*.*" template="/WEB-INF/views/inc/admin-layout.jsp">    
 	    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
 	    <put-attribute name="main" value="/WEB-INF/views/admin/{1}/{2}.jsp" />
 	    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
@@ -11,6 +11,7 @@
 	<definition name="home.login" template="/WEB-INF/views/inc/login-layout.jsp">    
 	    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
 	    <put-attribute name="main" value="/WEB-INF/views/home/login.jsp" />
+	    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
     </definition>
     <definition name="profile.detail" template="/WEB-INF/views/inc/profile-layout.jsp">    
 	    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
