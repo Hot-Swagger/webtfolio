@@ -4,53 +4,53 @@
 <c:set var="root" value="${pageContext.request.contextPath}"/>
 <main class="main">
 <!--background-->
-	<h1>profile reg page</h1>
+	<h1>Portfolio reg page</h1>
 	<div class="register-form-w3layouts">
 		<!-- Form starts here -->
 		<form action="#" method="post">
-			<h3 class="sub-heading-agileits">Profile Details</h3>
+			<h3 class="sub-heading-agileits">Portfolio Details</h3>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="text" name="name" placeholder="이름" required="">
+					<input type="text" name="title" placeholder="제목" required="">
 				</div>
 				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<select class="form-control" name="gender">
-						<option>성별</option>
-						<option value="남성">남성</option>
-						<option value="여성">여성</option>
+					<select class="form-control" name="category">
+						<option>카테고리</option>
+						<option value="남성">SI프로젝트</option>
+						<option value="여성">어플리케이션</option>
 					</select>
 				</div>
 			</div>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input id="datepicker" name="birthday" type="text" placeholder="생년월일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
-					    required="">
+					<input type="text" name="dev-period" placeholder="개발기간" required="">
 				</div>
 				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="address" placeholder="주소" required="">
+					<input type="email" name="persons" placeholder="개발인원" required="">
 				</div>
 			</div>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="text" name="phone" placeholder="연락처" required="">
+					<select class="form-control" name="skill">
+						<option>사용기술</option>
+						<option value="JAVA">Java</option>
+						<option value="HTML/CSS">HTML/CSS</option>
+						<option value="JavaScript/Jquery">JavaScript/Jquery</option>
+						<option value="Oracle DB">Oracle DB</option>
+					</select>
 				</div>
 				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="email" name="email" placeholder="Email" required="">
+					<input type="text" name="role" placeholder="역할" required="">
 				</div>
 			</div>
-			<div class="main-flex-w3ls-sectns">
-				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="text" name="school" placeholder="학교" required="">
+			<div class="field-agileinfo-spc form-w3-agile-text">
+					<textarea name="detail" placeholder="포트폴리오 상세내역"></textarea>
 				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="major" placeholder="전공" required="">
-				</div>
-			</div>
 			<!-- <div class="field-agileinfo-spc form-w3-agile-text">
 				<textarea name="address" placeholder="거주지"></textarea>
 			</div> -->
 			<div class="clear"></div>
-			<h2 class="sub-heading-agileits">Experience Details</h2>
+			<!-- <h2 class="sub-heading-agileits">Experience Details</h2>
 			<div>
 				<div class="main-flex-w3ls-sectns">
 					<div class="field-agileinfo-spc form-w3-agile-text1">
@@ -85,7 +85,7 @@
 				<div class="field-agileinfo-spc form-w3-agile-text">
 					<textarea name="detail" placeholder="프로젝트 상세내역"></textarea>
 				</div>
-				<!-- <div class="radio-section">
+				<div class="radio-section">
 					<h6>Taking any medications currently</h6>
 					<ul class="radio-buttons-w3-agileits">
 						<li>
@@ -105,8 +105,8 @@
 				</div>
 				<div class="field-agileinfo-spc form-w3-agile-text">
 					<textarea name="Message" placeholder="If you are taking please list them here.."></textarea>
-				</div> -->
-			</div>
+				</div>
+			</div> -->
 			<input type="submit" value="저장">
 			<input type="reset" value="취소">
 			<div class="clear"></div>
