@@ -1,5 +1,7 @@
 package com.webtfolio.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -8,7 +10,7 @@ import org.apache.ibatis.annotations.Update;
 import com.webtfolio.entity.Skill;
 
 public interface SkillDao {
-
+	
 	@Select("select * from Skill where skillId=#{skillId}")
 	Skill get(String skillId);
 	
@@ -27,4 +29,5 @@ public interface SkillDao {
 	
 	@Delete("delete from Skill where skillId=#{skillId}")
 	int delete(String skillId);
+
 }

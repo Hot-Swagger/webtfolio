@@ -31,8 +31,8 @@ public class MybatisConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		//dataSource.setUrl("jdbc:mysql://211.238.142.97/newlecture?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8");
 		//dataSource.setUrl("jdbc:mysql://211.238.142.82/webtfoliodb?serverTimezone=UTC&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8");
-		//dataSource.setUrl("jdbc:mysql://192.168.168.103/webtfoliodb?serverTimezone=UTC&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8");
-		dataSource.setUrl("jdbc:mysql://14.36.165.11/webtfoliodb?serverTimezone=UTC&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8");
+		dataSource.setUrl("jdbc:mysql://192.168.168.103/webtfoliodb?serverTimezone=UTC&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8");
+		//dataSource.setUrl("jdbc:mysql://14.36.165.11/webtfoliodb?serverTimezone=UTC&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8");
 		dataSource.setUsername("dskim");
 		dataSource.setPassword("dskim");
 		dataSource.setRemoveAbandoned(true);

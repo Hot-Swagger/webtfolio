@@ -2,31 +2,24 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="root" value="${pageContext.request.contextPath}"/>
-<link rel="stylesheet" href="${root}/resource/css/Nwagon.css" type="text/css">
-<script src="${root}/resource/js/Nwagon.js"></script>
 <main class="main">
-	<section>
-		<h1 style="padding: 0 10px;">Programming skills</h1>
-		<div id="chart_d" style="margin-left:-10px;"></div>
-		<script>
-			
-			var options = {
-				'dataset': {
-					title: 'Web accessibility status',
-					values:[18, 12, 3, 10, 7],
-					colorset: ['#2BC8C9', '#FF8C00', '#DC143C','#2EB400', '#666666'],
-					fields: ['Java', 'HTML/CSS',  'Oracle DB', 'JavaScript', 'Spring'] 
-				},
-				'donut_width' : 40, 
-				'core_circle_radius':60,
-				'chartDiv': 'chart_d',
-				'chartType': 'donut',
-				'chartSize': {width:370, height:240}
-			};
-	
-			Nwagon.chart(options);
-		</script>
-	</section>
+	<section class="skills-section section">
+		<h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+		<div class="skillset">
+			<c:forEach var="s" items="${skillList}" varStatus="status">
+			<c:if test="${status.first}">
+				<c:set var="first" value="${s.count}"/>
+			</c:if>
+		    <div class="item">
+		        <h3 class="level-title"><span>${s.skillId}</span><span> [ ${s.count}회 ]</span></h3>
+		        <div class="level-bar">
+		            <div class="level-bar-inner" data-level="${s.count/first*100}%">
+		            </div>                                      
+		        </div><!--//level-bar-->                                 
+		    </div><!--//item-->
+		    </c:forEach>
+	    </div>  
+	</section><!--//skills-section-->
 	<section class="index-portfolio">
 		<h1 class="hidden">PORTFOLIO list</h1>
 		<nav class="portfolio-category">
@@ -36,51 +29,23 @@
 				<li class="btn-lg btn-bright">어플리케이션</li>
 			</ul>
 		</nav>
+		<c:forEach var="p" items="${portList}">
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
+			<c:forEach var="i" items="${imgList}">
+			<c:if test="${p.id == i.portfolioId}">
+			<img src="${root}/resource/images/${i.image}" alt="포폴이미지"/>
+			</c:if>
+			</c:forEach>
 			<div class="portfolio-rollover">
-				<a href="${root}/portfolio/1">
+				<a href="${root}/portfolio/${p.id}">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
 				</a>
-				<p>여행기록 웹페이지 "여기"</p>
+				<p>${p.title}</p>
 			</div>
 		</article>
-		<article class="portfolio-frame">
-			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
-			<div class="portfolio-rollover">
-				<a href="${root}/portfolio/2">
-					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
-				</a>
-				<p>여행기록 웹페이지 "여기"</p>
-			</div>
-		</article>
-		<article class="portfolio-frame">
-			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
-			<div class="portfolio-rollover">
-				<a href="${root}/portfolio/3">
-					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
-				</a>
-				<p>여행기록 웹페이지 "여기"</p>
-			</div>
-		</article>
+		</c:forEach>
 	</section>
 	<div id="index-load-portfolio">
 		LOAD MORE PORTFOLIO
 	</div>
-	<section class="note-list">
-		<h1 class="hidden">노트목록</h1>
-		<ul>
-			<c:forEach var="portfolio" items="${portfolios}">
-			<li class="text">
-				<div><a href="${portfolio.id}">${portfolio.title}</a></div>
-				<!-- <div class="text ellipsis"> -->
-				<div>
-					<%-- <span class="text-concat">${note.content}</span> --%>
-					${portfolio.detail}
-				</div>
-				<div><span>분류</span><span>${portfolio.regDate}</span></div>
-			</li>			
-			</c:forEach>
-		</ul>
-	</section>
 </main>

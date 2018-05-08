@@ -23,7 +23,7 @@
 			</div>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input id="datepicker" name="birthday" type="text" placeholder="생년월일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+					<input id="datepicker1" name="birthday" type="text" placeholder="생년월일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
 					    required="">
 				</div>
 				<div class="field-agileinfo-spc form-w3-agile-text2">
@@ -46,66 +46,73 @@
 					<input type="text" name="major" placeholder="전공" required="">
 				</div>
 			</div>
-			<!-- <div class="field-agileinfo-spc form-w3-agile-text">
-				<textarea name="address" placeholder="거주지"></textarea>
-			</div> -->
 			<div class="clear"></div>
-			<h2 class="sub-heading-agileits">Experience Details</h2>
 			<div>
-				<div class="main-flex-w3ls-sectns">
-					<div class="field-agileinfo-spc form-w3-agile-text1">
-						<input type="text" name="company" placeholder="회사명" required="">
+				<h2 class="sub-heading-agileits">
+					<span>Experience Details</span>
+					<a href="">
+						<img src="${root}/resource/images/ic_add_white_24dp_1x.png" alt="" class="add-image">
+					</a>
+					<a href="">
+						<img src="${root}/resource/images/ic_remove_white_24dp_1x.png" alt="" class="remove-image">
+					</a>
+				</h2>
+				<div>
+					<div class="main-flex-w3ls-sectns">
+						<div class="field-agileinfo-spc form-w3-agile-text1">
+							<input type="text" name="company" placeholder="회사명" required="">
+						</div>
+						<div class="field-agileinfo-spc form-w3-agile-text2">
+							<select class="form-control" name="inOffice">
+								<option>재직여부</option>
+								<option value="재직중">재직중</option>
+								<option value="퇴사">퇴사</option>
+							</select>
+						</div>
 					</div>
-					<div class="field-agileinfo-spc form-w3-agile-text2">
-						<select class="form-control" name="inOffice">
-							<option>재직여부</option>
-							<option value="재직중">재직중</option>
-							<option value="퇴사">퇴사</option>
-						</select>
+					<div class="main-flex-w3ls-sectns">
+						<div class="field-agileinfo-spc form-w3-agile-text1">
+							<input id="datepicker2" name="entDate" type="text" placeholder="입사일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+							    required="">
+						</div>
+						<div class="field-agileinfo-spc form-w3-agile-text2">
+							<input id="datepicker3" name="leavDate" type="text" placeholder="퇴사일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+							    required="">
+						</div>
 					</div>
+					<div class="main-flex-w3ls-sectns">
+						<div class="field-agileinfo-spc form-w3-agile-text1">
+							<input type="text" name="business" placeholder="담당업무" required="">
+						</div>
+						<div class="field-agileinfo-spc form-w3-agile-text2">
+							<input type="text" name="position" placeholder="직급" required="">
+						</div>
+					</div>
+					<div class="field-agileinfo-spc form-w3-agile-text">
+						<textarea name="detail" placeholder="프로젝트 상세내역"></textarea>
+					</div>
+					<!-- <div class="radio-section">
+						<h6>Taking any medications currently</h6>
+						<ul class="radio-buttons-w3-agileits">
+							<li>
+								<input type="radio" id="a-option" name="selector1">
+								<label for="a-option">Yes</label>
+								<div class="check"></div>
+							</li>
+							<li>
+								<input type="radio" id="b-option" name="selector1">
+								<label for="b-option">No</label>
+								<div class="check">
+									<div class="inside"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="field-agileinfo-spc form-w3-agile-text">
+						<textarea name="Message" placeholder="If you are taking please list them here.."></textarea>
+					</div> -->
 				</div>
-				<div class="main-flex-w3ls-sectns">
-					<div class="field-agileinfo-spc form-w3-agile-text1">
-						<input id="datepicker" name="entDate" type="text" placeholder="입사일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
-						    required="">
-					</div>
-					<div class="field-agileinfo-spc form-w3-agile-text2">
-						<input id="datepicker" name="leavDate" type="text" placeholder="퇴사일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
-						    required="">
-					</div>
-				</div>
-				<div class="main-flex-w3ls-sectns">
-					<div class="field-agileinfo-spc form-w3-agile-text1">
-						<input type="text" name="business" placeholder="담당업무" required="">
-					</div>
-					<div class="field-agileinfo-spc form-w3-agile-text2">
-						<input type="text" name="position" placeholder="직급" required="">
-					</div>
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text">
-					<textarea name="detail" placeholder="프로젝트 상세내역"></textarea>
-				</div>
-				<!-- <div class="radio-section">
-					<h6>Taking any medications currently</h6>
-					<ul class="radio-buttons-w3-agileits">
-						<li>
-							<input type="radio" id="a-option" name="selector1">
-							<label for="a-option">Yes</label>
-							<div class="check"></div>
-						</li>
-						<li>
-							<input type="radio" id="b-option" name="selector1">
-							<label for="b-option">No</label>
-							<div class="check">
-								<div class="inside"></div>
-							</div>
-						</li>
-					</ul>
-					<div class="clear"></div>
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text">
-					<textarea name="Message" placeholder="If you are taking please list them here.."></textarea>
-				</div> -->
 			</div>
 			<input type="submit" value="저장">
 			<input type="reset" value="취소">

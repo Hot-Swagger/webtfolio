@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="${root}/resource/assets/plugins/font-awesome/css/font-awesome.css">
     
     <!-- Theme CSS -->  
-    <%-- <link id="theme-style" rel="stylesheet" href="${root}/resource/assets/css/styles.css"> --%>
+    <link id="theme-style" rel="stylesheet" href="${root}/resource/assets/css/styles.css">
 	<link href="${root}/resource/css/style.css" type ="text/css" rel ="stylesheet"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Webtfolio</title>

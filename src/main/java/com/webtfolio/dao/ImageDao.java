@@ -17,6 +17,10 @@ public interface ImageDao {
 			+ "order by 'order'")
 	List<Image> getList(int portfolioId);
 	
+	@Select("select * from Image "
+			+ "where mainImage=true")
+	List<Image> getMainList();
+	
 	@Select("select * from Image where id=#{id}")
 	Image get(int id);
 	
@@ -43,5 +47,6 @@ public interface ImageDao {
 	
 	@Delete("delete from Image where id=#{id}")
 	int delete(int id);
+
 	
 }

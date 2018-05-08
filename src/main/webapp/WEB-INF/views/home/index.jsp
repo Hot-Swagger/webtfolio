@@ -10,33 +10,21 @@
 	</article>
 	<section class="index-portfolio">
 		<h1>RECENTLY PORTFOLIO</h1>
+		<c:forEach var="p" items="${portList}">
 		<article class="portfolio-frame">
-			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
+			<c:forEach var="i" items="${imgList}">
+			<c:if test="${p.id == i.portfolioId}">
+			<img src="${root}/resource/images/${i.image}" alt="포폴이미지"/>
+			</c:if>
+			</c:forEach>
 			<div class="portfolio-rollover">
-				<a href="${root}/portfolio/1">
+				<a href="${root}/portfolio/${p.id}">
 					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
 				</a>
-				<p>여행기록 웹페이지 "여기"</p>
+				<p>${p.title}</p>
 			</div>
 		</article>
-		<article class="portfolio-frame">
-			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
-			<div class="portfolio-rollover">
-				<a href="${root}/portfolio/2">
-					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
-				</a>
-				<p>여행기록 웹페이지 "여기"</p>
-			</div>
-		</article>
-		<article class="portfolio-frame">
-			<img src="${root}/resource/images/yeogi-main.png" alt="포폴이미지"/>
-			<div class="portfolio-rollover">
-				<a href="${root}/portfolio/3">
-					<img src="${root}/resource/images/ic_link_white_48dp_1x.png" alt="링크이미지">
-				</a>
-				<p>여행기록 웹페이지 "여기"</p>
-			</div>
-		</article>
+		</c:forEach>
 	</section>
 	<div id="index-load-portfolio">
 		LOAD MORE PORTFOLIO

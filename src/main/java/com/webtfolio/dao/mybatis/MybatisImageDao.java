@@ -21,6 +21,13 @@ public class MybatisImageDao implements ImageDao {
 		List<Image> result = imageDao.getList(portfolioId);
 		return result;
 	}
+	
+	@Override
+	public List<Image> getMainList() {
+		ImageDao imageDao = sqlSession.getMapper(ImageDao.class);
+		List<Image> result = imageDao.getMainList();
+		return result;
+	}
 
 	@Override
 	public Image get(int id) {

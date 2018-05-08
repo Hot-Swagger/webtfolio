@@ -1,12 +1,12 @@
 package com.webtfolio.dao.mybatis;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.webtfolio.dao.RoleDao;
 import com.webtfolio.dao.SkillDao;
-import com.webtfolio.entity.Role;
 import com.webtfolio.entity.Skill;
 
 @Repository
@@ -14,7 +14,7 @@ public class MybatisSkillDao implements SkillDao {
 
 	@Autowired
 	private SqlSession sqlSession;
-
+	
 	@Override
 	public Skill get(String skillId) {
 		SkillDao dao = sqlSession.getMapper(SkillDao.class);

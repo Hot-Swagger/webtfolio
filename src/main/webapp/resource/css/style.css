@@ -372,6 +372,7 @@ a:active{
 				font-size: 20px;
 				font-weight: bold;
 				line-height: 1.88;
+				color: #000;
 				
 			}
 #index-load-portfolio{
@@ -391,7 +392,7 @@ a:active{
 }
 /* --- portfolio main ------------------------------------------------------------ */
 .portfolio-category{
-	padding: 5px 5px 20px 5px;
+	padding: 20px 5px;
 }
 .portfolio-category ul{
 	display: flex;
@@ -409,7 +410,12 @@ a:active{
 	.portfolio-category ul li:first-child{
 		margin-left: 1%;
 	}
-
+.skills-section{
+	padding: 20px;
+}
+	.section-title{
+		margin-bottom: 12px;
+	}
 
 /* --- portfolio-detail main ------------------------------------------------------------ */
 .detail-main-container{

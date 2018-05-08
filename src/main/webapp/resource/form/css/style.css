@@ -410,6 +410,34 @@ select.form-control option {
     color: #fff;
 }
 
+h2.sub-heading-agileits{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-heading-agileits > a{
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 8px;
+	width: 24px;
+	height: 24px;
+}
+
+.add-image{
+	background: #23b4cc;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+}
+
+.remove-image{
+	background: #82bb3b;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+}
+
 /*-- checkbox --*/
 
 .register-form-w3layouts label {
@@ -497,6 +525,22 @@ ul.radio-buttons-w3-agileits li {
         text-align: center;
         font-size: 23px;
     }
+    .sub-heading-agileits > a{
+		width: 23px;
+		height: 23px;
+	}
+	
+	.add-image{
+		width: 23px;
+		height: 23px;
+		border-radius: 11.5px;
+	}
+	
+	.remove-image{
+		width: 23px;
+		height: 23px;
+		border-radius: 11.5px;
+	}
 }
 
 @media(max-width:640px) {
@@ -516,6 +560,22 @@ ul.radio-buttons-w3-agileits li {
     .register-form-w3layouts {
         padding: 5vw;
     }
+    .sub-heading-agileits > a{
+		width: 21px;
+		height: 21px;
+	}
+	
+	.add-image{
+		width: 21px;
+		height: 21px;
+		border-radius: 10.5px;
+	}
+	
+	.remove-image{
+		width: 21px;
+		height: 21px;
+		border-radius: 10.5px;
+	}
 }
 
 @media(max-width:568px) {
@@ -537,6 +597,22 @@ ul.radio-buttons-w3-agileits li {
         margin: 0px 5vw;
         padding: 6vw;
     }
+    .sub-heading-agileits > a{
+		width: 20px;
+		height: 20px;
+	}
+	
+	.add-image{
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+	}
+	
+	.remove-image{
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+	}
 }
 
 @media(max-width:480px) {
@@ -555,6 +631,22 @@ ul.radio-buttons-w3-agileits li {
         margin-top: .8em;
         float: none;
     }
+    .sub-heading-agileits > a{
+		width: 19px;
+		height: 19px;
+	}
+	
+	.add-image{
+		width: 19px;
+		height: 19px;
+		border-radius: 9.5px;
+	}
+	
+	.remove-image{
+		width: 19px;
+		height: 19px;
+		border-radius: 9.5px;
+	}
 }
 
 @media(max-width:414px) {
@@ -580,6 +672,22 @@ ul.radio-buttons-w3-agileits li {
         font-size: 12vw;
         letter-spacing: 1px;
     }
+    .sub-heading-agileits > a{
+		width: 25px;
+		height: 25px;
+	}
+	
+	.add-image{
+		width: 25px;
+		height: 25px;
+		border-radius: 12.5px;
+	}
+	
+	.remove-image{
+		width: 25px;
+		height: 25px;
+		border-radius: 12.5px;
+	}
 }
 
 /*--//responsive--*/
