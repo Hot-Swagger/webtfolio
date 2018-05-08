@@ -9,7 +9,7 @@ import com.webtfolio.entity.Profile;
 
 public interface ProfileDao {
 
-	@Select("select * from Profile where id=#{id}")
+	@Select("select * from Profile where accountId=#{accountId}")
 	Profile get(String accountId);
 	
 	@Insert("insert into Profile("

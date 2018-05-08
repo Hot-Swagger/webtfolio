@@ -16,10 +16,10 @@ public class MybatisCertificateDao implements CertificateDao {
 	private SqlSession sqlSession;
 	
 	@Override
-	public List<Certificate> getList(int profileId) {
+	public List<Certificate> getList(String accountId) {
 		
 		CertificateDao certificateDao = sqlSession.getMapper(CertificateDao.class);
-		List<Certificate> result = certificateDao.getList(profileId);
+		List<Certificate> result = certificateDao.getList(accountId);
 		return result;
 	}
 

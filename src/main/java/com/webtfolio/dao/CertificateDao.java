@@ -13,9 +13,9 @@ import com.webtfolio.entity.Certificate;
 public interface CertificateDao {
 
 	@Select("select * from Certificate "
-			+ "where profileId=#{profileId} "
+			+ "where accountId=#{accountId} "
 			+ "order by pubDate desc")
-	List<Certificate> getList(int profileId);
+	List<Certificate> getList(String accountId);
 	
 	@Select("select * from Certificate where id=#{id}")
 	Certificate get(int id);
@@ -26,14 +26,14 @@ public interface CertificateDao {
 			+ "publisher, "
 			+ "level, "
 			+ "pubDate, "
-			+ "profileId) "
+			+ "accountId) "
 			+"values("
 			+ "#{name},"
 			+ "#{certNo},"
 			+ "#{publisher},"
 			+ "#{level},"
 			+ "#{pubDate},"
-			+ "#{profileId})")
+			+ "#{accountId})")
 	@Options(useGeneratedKeys = true, keyProperty = "id")
 	int insert(Certificate certificate);
 	
@@ -43,7 +43,7 @@ public interface CertificateDao {
 			+ "publisher=#{publisher}, "
 			+ "level=#{level}, "
 			+ "pubDate=#{pubDate}, "
-			+ "profileId=#{profileId} "
+			+ "accountId=#{accountId} "
 			+ "where id=#{id}")
 	int update(Certificate certificate);
 	
