@@ -40,11 +40,37 @@
 			</div>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input type="text" name="website" placeholder="홈페이지" required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" name="github" placeholder="GitHub" required="">
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input type="text" name="school" placeholder="학교" required="">
 				</div>
 				<div class="field-agileinfo-spc form-w3-agile-text2">
 					<input type="text" name="major" placeholder="전공" required="">
 				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input id="datepicker2" name="matrDate" type="text" placeholder="입학일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+					    required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input id="datepicker3" name="gradDate" type="text" placeholder="졸업일" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+					    required="">
+				</div>
+			</div>
+			<div class="field-agileinfo-spc form-w3-agile-text">
+				<input class="upload-name" value="프로필사진" disabled="disabled">
+				<label for="ex_filename">업로드</label>
+				<input type="file" id="ex_filename" name="photo" class="upload-hidden">
+			</div>
+			<div class="field-agileinfo-spc form-w3-agile-text">
+				<textarea name="produce" placeholder="간략 자기소개"></textarea>
 			</div>
 			<div class="clear"></div>
 			<div>
@@ -209,3 +235,18 @@
 		</section>
 	</form> -->
 </main>
+<script>
+	$(document).ready(function(){
+	  var fileTarget = $('.field-agileinfo-spc .upload-hidden');
+	
+	    fileTarget.on('change', function(){
+	        if(window.FileReader){
+	            var filename = $(this)[0].files[0].name;
+	        } else {
+	            var filename = $(this).val().split('/').pop().split('\\').pop();
+	        }
+	
+	        $(this).siblings('.upload-name').val(filename);
+	    });
+	});
+</script>

@@ -13,7 +13,7 @@ public class Profile {
 	private String address;
 	private String school;
 	private String major;
-	private Date entDate;
+	private Date matrDate;
 	private Date gradDate;
 	private String phone;
 	private String email;
@@ -31,7 +31,7 @@ public class Profile {
 	}
 
 	public Profile(String accountId, String name, String gender, Date birthday, String mainJob, String address,
-			String school, String major, Date entDate, Date gradDate, String phone, String email, String website,
+			String school, String major, Date matrDate, Date gradDate, String phone, String email, String website,
 			String github, String photo, String produce) {
 		super();
 		this.accountId = accountId;
@@ -42,7 +42,7 @@ public class Profile {
 		this.address = address;
 		this.school = school;
 		this.major = major;
-		this.entDate = entDate;
+		this.matrDate = matrDate;
 		this.gradDate = gradDate;
 		this.phone = phone;
 		this.email = email;
@@ -53,7 +53,7 @@ public class Profile {
 	}
 
 	public Profile(String accountId, String name, String gender, Date birthday, String mainJob, String address,
-			String school, String major, Date entDate, Date gradDate, String phone, String email, String website,
+			String school, String major, Date matrDate, Date gradDate, String phone, String email, String website,
 			String github, String photo, String produce, Date regDate) {
 		super();
 		this.accountId = accountId;
@@ -64,7 +64,7 @@ public class Profile {
 		this.address = address;
 		this.school = school;
 		this.major = major;
-		this.entDate = entDate;
+		this.matrDate = matrDate;
 		this.gradDate = gradDate;
 		this.phone = phone;
 		this.email = email;
@@ -139,12 +139,12 @@ public class Profile {
 		this.major = major;
 	}
 
-	public Date getEntDate() {
-		return entDate;
+	public Date getMatrDate() {
+		return matrDate;
 	}
 
-	public void setEntDate(Date entDate) {
-		this.entDate = entDate;
+	public void setMatrDate(Date matrDate) {
+		this.matrDate = matrDate;
 	}
 
 	public Date getGradDate() {

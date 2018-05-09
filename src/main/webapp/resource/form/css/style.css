@@ -441,12 +441,12 @@ h2.sub-heading-agileits{
 /*-- checkbox --*/
 
 .register-form-w3layouts label {
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
     color: rgba(255, 255, 255, 0.83);
     letter-spacing: 2px;
     font-weight: 400;
     position: relative;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     display: inline-block;
     text-transform: capitalize;
 }

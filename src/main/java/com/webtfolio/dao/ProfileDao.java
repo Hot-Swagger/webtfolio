@@ -21,11 +21,14 @@ public interface ProfileDao {
 			+ "address, "
 			+ "school, "
 			+ "major, "
+			+ "matrDate, "
+			+ "gradDate, "
 			+ "phone, "
 			+ "email, "
 			+ "website, "
 			+ "github, "
-			+ "photo) "
+			+ "photo, "
+			+ "produce) "
 			+"values("
 			+ "#{accountId},"
 			+ "#{name},"
@@ -35,11 +38,14 @@ public interface ProfileDao {
 			+ "#{address},"
 			+ "#{school},"
 			+ "#{major},"
+			+ "#{matrDate},"
+			+ "#{gradDate},"
 			+ "#{phone},"
 			+ "#{email},"
 			+ "#{website},"
 			+ "#{github},"
-			+ "#{photo})")
+			+ "#{photo},"
+			+ "#{produce})")
 	int insert(Profile profile);
 	
 	@Update("update Profile set "
@@ -50,11 +56,14 @@ public interface ProfileDao {
 			+ "address=#{address}, "
 			+ "school=#{school}, "
 			+ "major=#{major}, "
+			+ "matrDate=#{matrDate}, "
+			+ "gradDate=#{gradDate}, "
 			+ "phone=#{phone}, "
 			+ "email=#{email}, "
 			+ "website=#{website}, "
 			+ "github=#{github}, "
 			+ "photo=#{photo}, "
+			+ "produce=#{produce}, "
 			+ "regDate=#{regDate} "
 			+ "where accountId=#{accountId}")
 	int update(Profile profile);

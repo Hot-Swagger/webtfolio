@@ -36,7 +36,7 @@
                 <div class="item">
                     <h4 class="degree">${profile.major} 전공</h4>
                     <h5 class="meta">${profile.school}</h5>
-                    <div class="time"><fmt:formatDate value="${profile.entDate}" pattern="yyyy"/> - <fmt:formatDate value="${profile.gradDate}" pattern="yyyy"/></div>
+                    <div class="time"><fmt:formatDate value="${profile.matrDate}" pattern="yyyy"/> - <fmt:formatDate value="${profile.gradDate}" pattern="yyyy"/></div>
                 </div><!--//item-->
                <!--  <div class="item">
                     <h4 class="degree">BSc in Applied Mathematics</h4>
